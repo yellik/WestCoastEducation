@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/content/css/site.css" />
+    <link
+      rel="stylesheet"
+      href="/content/css/navigation.css" />
+    <link
+      rel="stylesheet"
+      href="/content/css/utilities.css" />
+    <script
+      type="module"
+      src="/scripts/students-add-student.js"
+      defer></script>
+    <script
+      type="module"
+      src="/scripts/dom.js"
+      defer></script>
+    <script
+      src="https://kit.fontawesome.com/55174c58a9.js"
+      crossorigin="anonymous"></script>
+    <title>Add a course</title>
+  </head>
+  <body class="grid-container">
+    <header>
+      <nav>
+        <div class="container">
+          <ul class="menu">
+            <li class="logo">
+              <a
+                class="logo-title"
+                href="/index.html"
+                ><span><i class="fa-solid fa-computer"></i></span> Westcoast Education</a
+              >
+            </li>
+            <li class="toggle">
+              <input
+                class="menu-btn"
+                type="checkbox"
+                id="menu-btn" />
+              <label
+                class="menu-icon"
+                for="menu-btn"
+                ><span class="nav-icon"></span>
+              </label>
+            </li>
+            <li class="menu-item">
+              <a href="/admin/student-list.html">View all students</a>
+            </li>
+            <li class="menu-item">
+              <a href="/admin/index.html">View all courses</a>
+            </li>
+            <li class="menu-item">
+              <a
+                class="active"
+                href="/admin/add-course.html"
+                >Add a course</a
+              >
+            </li>
+            <li class="menu-item">
+              <a
+                class="active"
+                href="/admin/add-student.html"
+                >Add a student</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="page-title">Add a new student</h1>
+      <form id="addStudentForm">
+        <div class="form-control">
+          <label for="course"> Enrolled in: </label>
+          <input
+            type="text"
+            name="course"
+            id="course"
+            placeholder="Add the name of the course" />
+        </div>
+        <div class="form-control">
+          <label for="name">Student name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter the students full name" />
+        </div>
+        <div class="form-control">
+          <label for="email">Please use student's email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder=" Add the student's email address" />
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Enter the students default password" />
+        </div>
+        <div class="form-control">
+          <label for="imageUrl">Image url</label>
+          <input
+            type="text"
+            name="imageUrl"
+            id="imageUrl"
+            value="no-car.png"
+            placeholder="insert picture name" />
+        </div>
+        <div class="form-control">
+          <button
+            type="submit"
+            class="btn">
+            Save
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
