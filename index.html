@@ -11,6 +11,8 @@
     <meta
       name="description"
       content="Welcome to Westcoast Education" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link
       rel="stylesheet"
       href="/content/css/site.css" />
@@ -29,6 +31,7 @@
     <script
       src="https://kit.fontawesome.com/55174c58a9.js"
       crossorigin="anonymous"></script>
+  
     <script
       src="/scripts/course-gallery.js"
       type="module"
@@ -36,6 +39,13 @@
     <script
     src="/scripts/dom.js"
     type="module">
+    </script>
+    <script
+    src="./scripts/navbar.js"
+    defer>
+    </script>
+    <script
+    src="./scripts/testimonials.js">
 
     </script>
     <title>Westcoast Education| Välkommen</title>
@@ -44,45 +54,18 @@
   <body class="grid-container">
     <!--NAV BAR-->
     <header>
-      <nav>
-        <div class="container">
-          <ul class="menu">
-            <li class="logo">
-              <a
-                class="logo-title"
-                href="/pages/index.html"
-                ><span><i class="fa-solid fa-computer"></i></span> Westcoast Education</a>
-              >
-            </li>
-            <li class="toggle">
-              <input
-                class="menu-btn"
-                type="checkbox"
-                id="menu-btn" />
-              <label
-                class="menu-icon"
-                for="menu-btn"
-                ><span class="nav-icon"></span>
-              </label>
-            </li>
-            <li class="menu-item">
-              <a
-                class="active"
-                href="/index.html"
-                >Start</a
-              >
-            </li>
-            <li class="menu-item"><a href="/pages/about.html">Om Oss</a></li>
-            <li class="menu-item">
-              <a href="/pages/contact.html">Kontakta Oss</a>
-            </li>
-            <li class="menu-item">
-              <a href="/admin/index.html">Administration</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+   
+        <ul class="menu">
+          <li><a class="menuItem" href="./pages/gallery.html">See all courses</a></li>
+          <li><a class="menuItem" href="#">About</a></li>
+          <li><a class="menuItem" href="#">Student Login</a></li>
+        </ul>
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+     
     </header>
     <!--TOP -->
     <main>
@@ -111,41 +94,7 @@
         <!--COURSE LIBRARY GOES HERE-->
         <section id="course-gallery"></section>
       </article>
-      <article id="feature-area">
-        <section
-          id="service"
-          class="box bg-light">
-          <i class="fa-solid fa-screwdriver-wrench"></i>
-          <h3>Service</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-            deserunt sit quos, ratione numquam distinctio maiores nisi veniam
-            dolore quis.
-          </p>
-        </section>
-        <section
-          id="leasing"
-          class="box bg-primary">
-          <i class="fa-regular fa-car-building"></i>
-          <h3>Leasing</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-            deserunt sit quos, ratione numquam distinctio maiores nisi veniam
-            dolore quis.
-          </p>
-        </section>
-        <section
-          id="store"
-          class="box bg-light">
-          <i class="fa-solid fa-shop"></i>
-          <h3>Butik</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-            deserunt sit quos, ratione numquam distinctio maiores nisi veniam
-            dolore quis.
-          </p>
-        </section>
-      </article>
+      <article id="testimonials"></article>
       
       
     </main>

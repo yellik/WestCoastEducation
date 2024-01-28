@@ -145,16 +145,17 @@
     {
       "id": 1,
       "name": "Pippi Longstockings",
-      "image.url": "",
+      "image.url": "pippi.jpeg",
       "course": "javascript",
       "description": "The instructor was nothing short of a coding wizard, guiding me through the mystical land of variables, loops, and functions. I felt like I had my very own Aladdin's lamp, but instead of wishes, I could summon the power of JavaScript to make my ideas come to life"
     },
     {
       "id": 1,
       "name": "freddy mercury",
-      "image.url": "",
+      "image.url": "freddy.jpeg",
       "course": "python",
       "description": "Python, with its elegance and simplicity, resonated with me just like the harmonies in one of our Queen classics. I discovered the power of variables, loops, and functions – each element adding its unique tone to the symphony of code. It was a Bohemian Rhapsody of logical expressions and conditional statements that left me singing with joy."
     }
+    
   ]
 }

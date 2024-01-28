@@ -9,6 +9,16 @@ const createCourseCard = (course) => {
 
   
 };
+const createTestimonialCard = (testimonial) => {
+  const div = document.createElement('div');
+  div.classList.add('testimonial-image');
+  div.appendChild(createTestimonialImage(testimonial.imageUrl, testimonial.id));
+  div.appendChild(createTestimonialInfo(testimonial));
+
+  return div;
+
+  
+};
 
 const createCourseImage = (imageUrl, id) => {
   const image = document.createElement('img');
@@ -22,6 +32,23 @@ const createCourseInfo = (course) => {
   const paragraph = document.createElement('p');
   paragraph.appendChild(
     document.createTextNode(`${course.name} ${course.type} ${course.avrRating}`)
+  );
+
+  return paragraph;
+};
+
+const createTestimonialImage = (imageUrl, id) => {
+  const image = document.createElement('img');
+  image.setAttribute('src', `../content/images-new/${imageUrl}`);
+  image.setAttribute('id', id);
+
+  return image;
+};
+
+const createTestimonialInfo = (testimonial) => {
+  const paragraph = document.createElement('p');
+  paragraph.appendChild(
+    document.createTextNode(`${testimonial.name} ${testimonial.name}`)
   );
 
   return paragraph;
@@ -101,4 +128,4 @@ const addCourseImageClickHandler = (images) => {
 };
 
 
-export { createCourseCard, addCourseImageClickHandler, createCourseList, mergeCoursesWithStudents };
+export { createCourseCard, addCourseImageClickHandler, createCourseList, mergeCoursesWithStudents, createTestimonialCard };
