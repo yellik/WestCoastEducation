@@ -9,6 +9,16 @@ const createCourseCard = (course) => {
 
   
 };
+const createTestimonialCard = (testimonial) => {
+  const div = document.createElement('div');
+  div.classList.add('testimonial-image');
+  div.appendChild(createTestimonialImage(testimonial.imageUrl, testimonial.id));
+  div.appendChild(createTestimonialInfo(testimonial));
+
+  return div;
+
+  
+};
 
 const createCourseImage = (imageUrl, id) => {
   const image = document.createElement('img');
@@ -92,4 +102,4 @@ const addCourseImageClickHandler = (images) => {
 };
 
 
-export { createCourseCard, addCourseImageClickHandler, createCourseList, mergeCoursesWithStudents };
+export { createCourseCard, addCourseImageClickHandler, createCourseList, mergeCoursesWithStudents, createTestimonialCard };
