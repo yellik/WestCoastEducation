@@ -15,7 +15,7 @@ const initPage = async () => {
   const students = await studentHttp.get();
 
  
-mergeCoursesWithStudents(courses, students, document.querySelector('#courses'));
+mergeCoursesWithStudents(courses, students, document.querySelector('#student-with-course'));
 
     const cards = document.querySelectorAll('#courses div');
     cards.forEach((card) => {

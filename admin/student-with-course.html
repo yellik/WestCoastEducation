@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <link
@@ -14,20 +17,28 @@
     <link
       rel="stylesheet"
       href="/content/css/utilities.css" />
-    <link
-      rel="stylesheet"
-      href="/content/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="/content/css/admin/index.css" />
+    <link 
+    rel="stylesheet" 
+    href="/content/css/gallery.css">
+    <link 
+    rel="stylesheet" 
+    href="/content/css/index.css">
     <script
       src="https://kit.fontawesome.com/55174c58a9.js"
       crossorigin="anonymous"></script>
     <script
-      type="module"
-      src="/scripts/course-admin-student.js"></script>
-    <title>Administration</title>
+      src="/scripts/admin-student-with-course.js"
+      defer
+      type="module">
+    </script>
+    <script
+      src="/scripts/student-dom.js",
+      type="module">
+    </script>
+
+    <title>All students</title>
   </head>
+  <body>
     <header>
       <nav>
         <div class="container">
@@ -55,22 +66,31 @@
               <a
                 class="active"
                 href="/admin/index.html"
-                >Lista bilar</a
+                >List all courses</a
               >
             </li>
             <li class="menu-item">
-              <a href="/admin/add-course.html">Lägg till bil</a>
+              <a
+                class="active"
+                href="/admin/student-list.html"
+                >List all students</a
+              >
+            </li>
+            <li class="menu-item">
+              <a href="/admin/add-course.html">Add a course</a>
+            </li>
+            <li class="menu-item">
+              <a href="/admin/add-student.html">Add a student</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <div class="container">
-        <h1 class="page-title">Administration</h1>
-        <h2 class="page-sub-title">Currently Running courses</h2>
-        <section id="courses"></section>
-      </div>
+      <section id="student-with-course"></section>
     </main>
+    <footer>
+      <p>Westcoast Cars &copy; 2023</p>
+    </footer>
   </body>
 </html>

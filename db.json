@@ -98,6 +98,15 @@
       "imageUrl": "course5.jpeg",
       "description": "",
       "id": 13
+    },
+    {
+      "name": "Golang",
+      "type": "remote",
+      "avrRating": "5",
+      "teacherName": "Peter Pan",
+      "imageUrl": "student1.png",
+      "description": "",
+      "id": 14
     }
   ],
   "students": [
@@ -139,6 +148,14 @@
       "password": "baywatch",
       "imageUrl": "no-car.png",
       "id": 5
+    },
+    {
+      "course": "Golang",
+      "name": "Jennifer Aniston",
+      "email": "jennifer@gmail.com",
+      "password": "JennyonTheblock",
+      "imageUrl": "student2.png",
+      "id": 6
     }
   ],
   "testimonials": [

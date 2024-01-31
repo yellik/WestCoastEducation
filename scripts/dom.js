@@ -37,31 +37,8 @@ const createCourseInfo = (course) => {
   return paragraph;
 };
 
-const createTestimonialImage = (imageUrl, id) => {
-  const image = document.createElement('img');
-  image.setAttribute('src', `../content/images-new/${imageUrl}`);
-  image.setAttribute('id', id);
 
-  return image;
-};
-
-const createTestimonialInfo = (testimonial) => {
-  const paragraph = document.createElement('p');
-  paragraph.appendChild(
-    document.createTextNode(`${testimonial.name} ${testimonial.name}`)
-  );
-
-  return paragraph;
-};
-
-//These are the details on the admin page
-// createcourseList som tar två argument
-// 1. listan av alla object
-// 2. Vilket element som vi ska addera objekten till
 const createCourseList = (courses, element) => {
-  // Loopa igenom alla courses
-  // För varje kurs skapa en div
-  // Den skapade diven skall läggas till element som vi skickade in
   courses.forEach((course) => {
     const container = createDiv();
     container.setAttribute('courseid', course.id);
@@ -70,11 +47,8 @@ const createCourseList = (courses, element) => {
     container.appendChild(createSpan(`Course brief: ${course.description}`));
     container.appendChild(createSpan(`Course rating: ${course.avrRating}`));
     element.appendChild(container);
-
-    
   });
 };
-
 
 const mergeCoursesWithStudents = (courses, students, element) => {
   courses.forEach((course) => {

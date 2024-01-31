@@ -22,11 +22,5 @@ async function displayCourseDetails (id) {
   courseDetails.appendChild(createCourseCard(course));
   };
 
- 
   
-  
-
-
-
- 
 document.addEventListener('DOMContentLoaded', initPage);
