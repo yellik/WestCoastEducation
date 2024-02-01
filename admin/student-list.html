@@ -22,7 +22,7 @@
     href="/content/css/gallery.css">
     <link 
     rel="stylesheet" 
-    href="/content/css/index.css">
+    href="/content/css/admin/index.css">
     <script
       src="https://kit.fontawesome.com/55174c58a9.js"
       crossorigin="anonymous"></script>
@@ -35,10 +35,9 @@
       src="/scripts/student-dom.js",
       type="module">
     </script>
-
     <title>All students</title>
   </head>
-  <body>
+  <body class="grid-container">
     <header>
       <nav>
         <div class="container">
@@ -47,7 +46,7 @@
               <a
                 class="logo-title"
                 href="/index.html"
-                ><span><i class="fa-solid fa-cars"></i></span> WestCoast Education</a
+                ><span><i class="fa-solid fa-computer"></i></span> Westcoast Education</a
               >
             </li>
             <li class="toggle">
@@ -61,26 +60,24 @@
                 ><span class="nav-icon"></span>
               </label>
             </li>
-
-            <li class="menu-item">
-              <a
-                class="active"
-                href="/admin/index.html"
-                >List all courses</a
-              >
+            <li class="active">
+              <a href="/admin/index.html">Admin Main</a>
             </li>
             <li class="menu-item">
               <a
-                class="active"
-                href="/admin/student-list.html"
-                >List all students</a
+                class="menu-item"
+                href="/admin/add-course.html"
+                >Add a course</a
               >
             </li>
             <li class="menu-item">
-              <a href="/admin/add-course.html">Add a course</a>
+              <a href="/admin/add-student.html">Add student</a>
             </li>
             <li class="menu-item">
-              <a href="/admin/add-student.html">Add a student</a>
+              <a href="/admin/courses-list.html">See All Courses</a>
+            </li>
+            <li class="menu-item">
+              <a href="/admin/student-list.html">See all Students</a>
             </li>
           </ul>
         </div>

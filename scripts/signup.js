@@ -1,22 +1,27 @@
 import HttpClient from './http.js';
 import { convertFormDataToJson } from './utilities.js';
 
-const form = document.querySelector('#SignupForm');
+const signupForm = document.querySelector('#signupForm');
 
-const addStudent = async (e) => {
-  e.preventDefault();
+window.submitForm = async () => {
+  try {
+    console.log('Form submitted'); // Check if the function is being called
 
-  const student = new FormData(form);
-  const obj = convertFormDataToJson(student);
-  saveStudent(obj);
+    const userData = new FormData(signupForm);
+    const userObject = convertFormDataToJson(userData);
+    console.log('User data:', userObject); // Check if the form data is being processed correctly
+
+    const studentsUrl = 'http://localhost:3000/students';
+    const http = new HttpClient(studentsUrl);
+
+    // Add the new user (student) to the students array
+    await http.add(userObject);
+
+    alert('User registered successfully!');
+    // Redirect to login page or any other desired page after successful signup
+    location.href = '/login.html';
+  } catch (error) {
+    console.error('An error occurred:', error.message);
+    alert('Error registering user. Please try again.');
+  }
 };
-
-const saveStudent = async (student) => {
-  const url = 'http://localhost:3000/students';
-  const http = new HttpClient(url);
-  await http.add(student);
-  location.href = './add-student.html';
-};
-
-form.addEventListener('submit', addStudent);
-

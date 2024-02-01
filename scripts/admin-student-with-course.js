@@ -26,7 +26,7 @@ const selectedCourses = (e) => {
   let courseId = 0;
   if (e.target.localName === 'div') {
     courseId = e.target.getAttribute('courseid');
-  } else if (e.target.localName === 'span') {
+  } else if (e.target.localName === 'div') {
     courseId = e.target.parentElement.getAttribute('courseid');
   }
 

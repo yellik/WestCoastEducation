@@ -14,21 +14,17 @@
     <link
       rel="stylesheet"
       href="/content/css/utilities.css" />
-    <link
-      rel="stylesheet"
-      href="/content/css/index.css" />
+    
     <link
       rel="stylesheet"
       href="/content/css/admin/index.css" />
     <script
       src="https://kit.fontawesome.com/55174c58a9.js"
       crossorigin="anonymous"></script>
-    <script
-      type="module"
-      src="/scripts/course-admin.js"></script>
-    <script 
-    type="module" 
-    src="courses-add-course">
+      <script
+    src="/scripts/admin-student-with-course.js"
+    defer
+    type="module">
   </script>
     <title>Administration</title>
   </head>
@@ -41,7 +37,7 @@
               <a
                 class="logo-title"
                 href="/index.html"
-                ><span><i class="fa-solid fa-computer"></i></span> WestCoast Education</a
+                ><span><i class="fa-solid fa-computer"></i></span> Westcoast Education</a
               >
             </li>
             <li class="toggle">
@@ -55,26 +51,24 @@
                 ><span class="nav-icon"></span>
               </label>
             </li>
-
-            <li class="menu-item">
-              <a
-                class="active"
-                href="/admin/index.html"
-                >View all courses</a
-              >
+            <li class="active">
+              <a href="/admin/index.html">Admin Main</a>
             </li>
             <li class="menu-item">
               <a
-                class="active"
-                href="/admin/student-list.html"
-                >View All Students</a
+                class="menu-item"
+                href="/admin/add-course.html"
+                >Add a course</a
               >
             </li>
             <li class="menu-item">
-              <a href="/admin/add-course.html">Add a course</a>
+              <a href="/admin/add-student.html">Add student</a>
             </li>
             <li class="menu-item">
-              <a href="/admin/add-student.html">Add a student</a>
+              <a href="/admin/courses-list.html">See All Courses</a>
+            </li>
+            <li class="menu-item">
+              <a href="/admin/student-list.html">See all Students</a>
             </li>
           </ul>
         </div>
@@ -82,9 +76,9 @@
     </header>
     <main>
       <div class="container">
-        <h1 class="page-title">Administration</h1>
-        <h2 class="page-sub-title">Currently running courses</h2>
-        <section id="courses"></section>
+        <h1 class="page-title">Admin Panel</h1>
+        <h2 class="page-sub-title">Here are all your courses with students enrolled</h2>
+        <section id="student-with-course"></section>
       </div>
     </main>
   </body>

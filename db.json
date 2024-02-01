@@ -107,6 +107,15 @@
       "imageUrl": "student1.png",
       "description": "",
       "id": 14
+    },
+    {
+      "name": "Javascript",
+      "type": "in-class",
+      "avrRating": "4",
+      "teacherName": "Margareth Tacher ",
+      "imageUrl": "student1.png",
+      "description": "",
+      "id": 15
     }
   ],
   "students": [
@@ -136,7 +145,7 @@
     },
     {
       "name": "Sarah Jessica Parker",
-      "email": "sarahJparker@sexinthecity.com",
+      "username": "sarahJparker@sexinthecity.com",
       "password": "Hellohello",
       "imageUrl": "jolie.jpeg",
       "id": 4
@@ -144,7 +153,7 @@
     {
       "course": "Python",
       "name": "Pamela Andersson",
-      "email": "pam@andersoon.com",
+      "username": "pam@andersoon.com",
       "password": "baywatch",
       "imageUrl": "no-car.png",
       "id": 5
@@ -152,10 +161,42 @@
     {
       "course": "Golang",
       "name": "Jennifer Aniston",
-      "email": "jennifer@gmail.com",
+      "username": "jennifer@gmail.com",
       "password": "JennyonTheblock",
       "imageUrl": "student2.png",
       "id": 6
+    },
+    {
+      "course": "Golang",
+      "name": "Jelena Cefalu",
+      "username": "yelli@hello.com",
+      "password": "YelliYelli",
+      "imageUrl": "student3.png",
+      "id": 7
+    },
+    {
+      "name": "Daniele Cefalu",
+      "username": "dani@gmail.com",
+      "course": "Javascript ",
+      "invoiceAddress": "14 dalston lane ",
+      "mobileNumber": "073655844",
+      "id": 8
+    },
+    {
+      "course": "Javascript",
+      "name": "Leonardi Di Caprio",
+      "email": "leo@dicap.com",
+      "password": "LeoLeo",
+      "imageUrl": "student3.png",
+      "id": 9
+    },
+    {
+      "name": "Fredrik",
+      "username": "Jacobsson",
+      "course": "Javascript",
+      "invoiceAddress": "Fredriksgatan 24",
+      "mobileNumber": "07777777",
+      "id": 10
     }
   ],
   "testimonials": [
@@ -173,6 +214,5 @@
       "course": "python",
       "description": "Python, with its elegance and simplicity, resonated with me just like the harmonies in one of our Queen classics. I discovered the power of variables, loops, and functions – each element adding its unique tone to the symphony of code. It was a Bohemian Rhapsody of logical expressions and conditional statements that left me singing with joy."
     }
-    
   ]
 }

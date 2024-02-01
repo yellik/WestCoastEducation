@@ -9,11 +9,11 @@
   href="/content/css/navigation.css" />
   <link rel="stylesheet" 
   href="/content/css/utilities.css" />
+ 
   <script type="module" 
-  src="/scripts/dom.js" 
+  src="/scripts/login.js" 
   defer></script>
-  <script
-  src="/scripts/login.js">
+
 
   </script>
   <script src="https://kit.fontawesome.com/55174c58a9.js" 
@@ -22,6 +22,13 @@
   
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="menuItem" href = "/index.html" >Home </a></li>
+      </ul>
+    </nav>
+  </header>
 
 <div class="login-container">
   <h1 class="page-title">Login</h1>
@@ -35,7 +42,9 @@
       <input type="password" name="password" id="password" placeholder="Enter your password" />
     </div>
     <div class="form-control">
-      <button type="button" class="btn" onclick="submitForm()">Login</button>
+      <button type="button" 
+      class="btn" 
+      onclick="submitForm()">Login</button>
     </div>
     <div class="signup-link">
         Don't have an account? <a href="signup.html">Sign up</a>

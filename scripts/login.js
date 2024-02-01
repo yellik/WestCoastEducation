@@ -1,31 +1,41 @@
-async function submitForm() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+import HttpClient from './http.js';
+import { convertFormDataToJson } from './utilities.js';
 
-    // Create an object with the login data
-    const loginData = { email, password };
+const loginForm = document.querySelector('#loginForm');
 
-    // Send a POST request to the JSON server
-    try {
-      const response = await fetch('http://your-json-server-url/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(loginData),
-      });
-
-      if (response.ok) {
-        // Handle successful login (e.g., redirect to a dashboard)
-        alert('Login successful! Redirecting to the dashboard...');
-        // Example: Redirect to the dashboard page
-        location.href = '/dashboard.html';
-      } else {
-        // Handle login error (e.g., show an error message)
-        alert('Invalid username or password. Please try again.');
+window.submitForm = async () => {
+  try {
+    
+    const userDetails = new FormData(loginForm);
+    const userData = convertFormDataToJson(userDetails);   
+    const studentsUrl = 'http://localhost:3000/students';
+    const http = new HttpClient(studentsUrl);
+    const students = await http.get();
+    const user = students.find((student) => {
+      if (student.username && student.password) {
+        return (
+          student.username === userData.email &&
+          student.password === userData.password
+        );
+      } else if (student.email && student.password) {
+        // For students with 'email' and 'password' fields
+        return (
+          student.email === userData.email &&
+          student.password === userData.password
+        );
       }
-    } catch (error) {
-      console.error('Error:', error);
-      // Handle other errors here
+
+      return false;
+    });
+
+      if (user) {
+      // Redirect to the user profile page (modify the URL as needed)
+      alert('Your login details are correct but we have not built your profile yet. Hold tight.');
+
+    } else {
+      alert('Invalid username or password. Please try again.');
     }
+  } catch (error) {
+    console.error('An error occurred:', error.message);
   }
+};
