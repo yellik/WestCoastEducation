@@ -1,0 +1,8 @@
+this is an app running on JSON server 
+
+to run please use
+
+npm install
+
+and then 
+npx json-server --watch db.json

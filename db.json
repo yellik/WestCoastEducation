@@ -1,22 +1,26 @@
 {
   "courses": [
     {
+      "id": "2",
       "name": "Python",
       "type": "remote",
       "avrRating": "4",
       "teacherName": "Adam Sandler",
       "imageUrl": "course2.jpeg",
       "description": "Makes you smart...",
-      "id": 2
+      "startDate": "02.02.2024",
+      "duration": "20 days"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Solidity",
       "imageUrl": "course4.jpeg",
       "description": "It's got a cool name",
       "avrRating": "5",
-      "type": "on demand",
-      "teacherName": "Obi-van-Kenobi"
+      "type": "on-demand",
+      "teacherName": "Obi-van-Kenobi",
+      "startDate": "14.02.2024",
+      "duration": "67 days"
     },
     {
       "name": "Web Design",
@@ -25,7 +29,9 @@
       "teacherName": "Obi-van-Kenobi",
       "imageUrl": "student1.jpeg",
       "description": "It's got a cool name",
-      "id": 4
+      "id": "4",
+      "startDate": "22.02.2024",
+      "duration": "87 days"
     },
     {
       "courseName": "C#",
@@ -34,7 +40,9 @@
       "teacherName": "Peter Pan",
       "imageUrl": "course5.jpeg",
       "description": "fairy dust ",
-      "id": 6
+      "id": "6",
+      "startDate": "14.03.2024",
+      "duration": "90 days"
     },
     {
       "name": "typescript",
@@ -43,7 +51,9 @@
       "teacherName": "Angelina Jolie",
       "imageUrl": "course6.jpeg",
       "description": "hello",
-      "id": 7
+      "id": "7",
+      "startDate": "22.03.2024",
+      "duration": "40 days"
     },
     {
       "name": "css flex",
@@ -52,7 +62,9 @@
       "teacherName": "The wicked witch",
       "imageUrl": "course8.jpeg",
       "description": "this should be fun",
-      "id": 8
+      "id": "8",
+      "startDate": "01.05.2024",
+      "duration": "17 days"
     },
     {
       "name": "dev-ops",
@@ -61,7 +73,9 @@
       "teacherName": "The wicked witch",
       "imageUrl": "student2.jpeg",
       "description": "",
-      "id": 9
+      "id": "9",
+      "startDate": "01.06.2024",
+      "duration": "71 days"
     },
     {
       "name": "fullastack developer ",
@@ -70,7 +84,9 @@
       "teacherName": "Freddie Mercury ",
       "imageUrl": "student7.jpeg",
       "description": "this is all about knowing it all",
-      "id": 10
+      "id": "10",
+      "startDate": "14.06.2024",
+      "duration": "25 days"
     },
     {
       "name": "Suzuki metod",
@@ -79,7 +95,9 @@
       "teacherName": "Daniele Cefalu",
       "imageUrl": "student1.jpeg",
       "description": "",
-      "id": 11
+      "id": "11",
+      "startDate": "24.07.2024",
+      "duration": "25 days"
     },
     {
       "name": "Big Data",
@@ -88,52 +106,123 @@
       "teacherName": "Yoda",
       "imageUrl": "student4.jpeg",
       "description": "",
-      "id": 12
+      "id": "12",
+      "startDate": "24.07.2024",
+      "duration": "15 days"
     },
     {
-      "name": "C#",
-      "type": "remote",
-      "avrRating": "4",
-      "teacherName": "Peter Pan",
-      "imageUrl": "course5.jpeg",
-      "description": "",
-      "id": 13
-    },
-    {
-      "name": "Golang",
-      "type": "remote",
-      "avrRating": "5",
-      "teacherName": "Peter Pan",
-      "imageUrl": "student1.png",
-      "description": "",
-      "id": 14
-    },
-    {
-      "name": "Javascript",
+      "id": "9ecf",
+      "name": "JSON SEVER",
       "type": "in-class",
       "avrRating": "4",
       "teacherName": "Margareth Tacher ",
-      "imageUrl": "student1.png",
-      "description": "",
-      "id": 15
+      "imageUrl": "student3.jpeg",
+      "description": ""
+    },
+    {
+      "id": "ae16",
+      "name": "server side hacking",
+      "type": "remote",
+      "avrRating": "4",
+      "teacherName": "PETER PAN",
+      "imageUrl": "student3.jpeg",
+      "description": ""
+    },
+    {
+      "id": "7542",
+      "name": "GitHub Commands",
+      "type": "remote",
+      "avrRating": "4",
+      "teacherName": "Valentino Rossi",
+      "imageUrl": "student1.jpeg",
+      "description": "Learn to co-operate with others though the most famous platform in the world"
+    },
+    {
+      "id": "e1b3",
+      "name": "coding for beginners",
+      "type": "in-class",
+      "avrRating": "5",
+      "teacherName": "Steven Spielberg",
+      "imageUrl": "student6.jpeg",
+      "description": "Start your IT career with one of our most popular courses. "
+    },
+    {
+      "id": "adc8",
+      "name": "css",
+      "type": "in-class",
+      "avrRating": "5",
+      "teacherName": "Barack Obama",
+      "imageUrl": "course3.jpeg",
+      "description": "The president himself shows off his creative design skills"
+    },
+    {
+      "id": "f939",
+      "name": "web design2 ",
+      "avrRating": "5",
+      "teacherName": "Rihanna",
+      "price": "100000000",
+      "startDate": "2024-02-27",
+      "duration": "20",
+      "imageUrl": "student3.jpe",
+      "description": "Rihanna herself will teach this course - literally worth a million dollars "
+    },
+    {
+      "id": "bf5a",
+      "name": "back-end Developer",
+      "classType": "online",
+      "avrRating": "5",
+      "teacherName": "Rihanna",
+      "price": "599",
+      "startDate": "2024-03-25",
+      "duration": "20",
+      "imageUrl": "student3.jpeg",
+      "description": "A great course for those of you who want to spend the rest of your life in the server room. "
+    },
+    {
+      "id": "3a44",
+      "name": "full-stack Developer",
+      "classType": "in-class",
+      "avrRating": "4",
+      "teacherName": "",
+      "price": "",
+      "startDate": "",
+      "duration": "",
+      "imageUrl": "no-car.png",
+      "description": ""
+    },
+    {
+      "id": "ad8a",
+      "name": "It support",
+      "classType": "in-class",
+      "avrRating": "3",
+      "teacherName": "JZ",
+      "price": "500000000",
+      "startDate": "2024-02-20",
+      "duration": "",
+      "imageUrl": "student8.jpeg",
+      "description": ""
     }
   ],
   "students": [
     {
-      "id": 1,
+      "id": "1",
       "name": "freddy mercury",
       "imageUrl": "freddy.jpeg",
       "username": "freddymerc@queen.com",
       "password": "HelloHello",
-      "course": "javascript"
+      "course": "javascript",
+      "invoiceAdress": "Westminster 1",
+      "mobileNumber": "0729755878"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Pippi Longstockings",
       "imageUrl": "pippi.jpeg",
       "username": "pippi@langstrump.com",
       "password": "Villa VIllekulla",
-      "course": "javascript"
+      "course": "javascript",
+      "invoiceAdress": "Villa VIllekulla",
+      "mobileNumber": "0735871258"
     },
     {
       "name": "Angelina Jolie",
@@ -141,76 +230,60 @@
       "password": "Hellohello",
       "imageUrl": "angelina.jpeg",
       "course": "javascript",
-      "id": 3
+      "id": "3",
+      "invoiceAdress": "Hollywood Beach",
+      "mobileNumber": "0076666666"
     },
     {
       "name": "Sarah Jessica Parker",
-      "username": "sarahJparker@sexinthecity.com",
+      "email": "sarahJparker@sexinthecity.com",
       "password": "Hellohello",
       "imageUrl": "jolie.jpeg",
-      "id": 4
+      "id": "4",
+      "invoiceAdress": "New York Avenue",
+      "mobileNumber": "234567"
     },
     {
       "course": "Python",
       "name": "Pamela Andersson",
-      "username": "pam@andersoon.com",
+      "email": "pam@andersoon.com",
       "password": "baywatch",
       "imageUrl": "no-car.png",
-      "id": 5
+      "id": "5",
+      "invoiceAdress": "baywatch",
+      "mobileNumber": "911"
     },
     {
-      "course": "Golang",
-      "name": "Jennifer Aniston",
-      "username": "jennifer@gmail.com",
-      "password": "JennyonTheblock",
-      "imageUrl": "student2.png",
-      "id": 6
+      "id": "80bc",
+      "course": "coding for beginners",
+      "name": "Anne Andresson",
+      "email": "anna.andersson@gmail.com",
+      "password": "Anna",
+      "imageUrl": "student5.jpeg",
+      "invoiceAdress": "Stortorget 1"
     },
     {
-      "course": "Golang",
-      "name": "Jelena Cefalu",
-      "username": "yelli@hello.com",
-      "password": "YelliYelli",
-      "imageUrl": "student3.png",
-      "id": 7
-    },
-    {
-      "name": "Daniele Cefalu",
-      "username": "dani@gmail.com",
-      "course": "Javascript ",
-      "invoiceAddress": "14 dalston lane ",
-      "mobileNumber": "073655844",
-      "id": 8
-    },
-    {
+      "id": "48bf",
       "course": "Javascript",
-      "name": "Leonardi Di Caprio",
-      "email": "leo@dicap.com",
-      "password": "LeoLeo",
-      "imageUrl": "student3.png",
-      "id": 9
-    },
-    {
-      "name": "Fredrik",
-      "username": "Jacobsson",
-      "course": "Javascript",
-      "invoiceAddress": "Fredriksgatan 24",
-      "mobileNumber": "07777777",
-      "id": 10
+      "name": "Jessica Larsson",
+      "email": "jess@hello.com",
+      "password": "jessyjess",
+      "imageUrl": "student5.jpeg",
+      "invoiceAdress": "Storstigen 3"
     }
   ],
   "testimonials": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Pippi Longstockings",
-      "image.url": "pippi.jpeg",
+      "image.url": "",
       "course": "javascript",
       "description": "The instructor was nothing short of a coding wizard, guiding me through the mystical land of variables, loops, and functions. I felt like I had my very own Aladdin's lamp, but instead of wishes, I could summon the power of JavaScript to make my ideas come to life"
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "freddy mercury",
-      "image.url": "freddy.jpeg",
+      "image.url": "",
       "course": "python",
       "description": "Python, with its elegance and simplicity, resonated with me just like the harmonies in one of our Queen classics. I discovered the power of variables, loops, and functions – each element adding its unique tone to the symphony of code. It was a Bohemian Rhapsody of logical expressions and conditional statements that left me singing with joy."
     }

@@ -1,16 +1,6 @@
 {
-  "name": "21-rest",
-  "version": "1.0.0",
-  "description": "I JavaScript har vi två huvudsakliga sätt att arbeta med moduler.",
-  "main": "index.html",
-  "scripts": {
-    "test": "/no test"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "json-server": "^0.17.4",
-    "vitest": "^1.2.2"
+  "devDependencies": {
+    "gts": "^5.2.0",
+    "typescript": "^5.3.3"
   }
 }

@@ -1,0 +1,101 @@
+/* Gallery styles */
+body {
+    background: #ffffff;
+  }
+  
+  main {
+    padding: 1rem;
+    align-content: center;
+  }
+  
+  #courseList, #students-gallery, #student-with-course  {
+    align-content: center;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .course-card, .student-image {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: fit-content;
+    background-image: url(/content/images-new/student4.jpg);
+    margin: 1rem;
+    border: solid 1px #0008ef;
+    background: #fff;
+  
+    border-radius: 0.5rem;
+  }
+  
+  
+  .course-card img, .student-image img {
+    max-width: 100px;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  
+  .course-image p, .student-image p {
+    position: absolute;
+    text-align: left;
+  
+  }
+  
+  #student-with-course  {
+    background-color: #d48888;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  #student-with-course div {
+    width: 80%;
+    background-image: url(/content/images-new/student4.jpg);
+    margin: 1rem;
+    border: solid 1px #0008ef;
+    background: #fff;
+  
+    border-radius: 0.5rem;
+  }
+  #student-with-course div span {
+    display: block;
+    background-image: url(/content/images-new/student4.jpg);
+    margin: 1rem;
+    border: solid 1px #0008ef;
+    background: #fff;
+  
+    border-radius: 0.5rem;
+  }
+  #student-with-course div ul {
+    display: block;
+    background-image: url(/content/images-new/student4.jpg);
+    margin: 1rem;
+    border: solid 1px #ef0093;
+    background: #fff;
+  
+    border-radius: 0.5rem;
+  }
+  
+  img {
+    width: 600px;
+  }
+
+  @media (min-width: 768px) {
+    #courses-gallery, #student-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #courses-gallery, #student-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  

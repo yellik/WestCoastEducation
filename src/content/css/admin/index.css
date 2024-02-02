@@ -1,0 +1,36 @@
+#courses div, #student-list div {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 10px;
+  margin: 1.5rem 0;
+  padding: 1rem 0.8rem;
+  border: solid 2px #f48a8a;
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  color: #7a1717;
+  cursor: pointer;
+}
+
+#student-with-course div {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  margin: 1.5rem 0;
+  padding: 1rem 0.8rem;
+  border: solid 2px #f48a8a;
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+#student-with-course span {
+  display: flex;
+  padding: 1rem 0.8rem;
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+
+img {
+  width: 200px;
+}
