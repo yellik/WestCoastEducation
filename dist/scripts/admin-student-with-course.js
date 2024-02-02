@@ -17,7 +17,7 @@ const initPage = async () => {
  
 mergeCoursesWithStudents(courses, students, document.querySelector('#student-with-course'));
 
-    const cards = document.querySelectorAll('#courses div');
+    const cards = document.querySelectorAll('#student-with-course div');
     cards.forEach((card) => {
       card.addEventListener('click', selectedCourses);
     });
