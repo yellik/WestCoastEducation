@@ -201,6 +201,17 @@
       "duration": "",
       "imageUrl": "student8.jpeg",
       "description": ""
+    },
+    {
+      "id": "31a3",
+      "name": "React ",
+      "avrRating": "5",
+      "teacherName": "Rihanna",
+      "price": "5000",
+      "startDate": "2025-02-04",
+      "duration": "6",
+      "imageUrl": "student4.jpeg",
+      "description": "this is the most confusing course in the world "
     }
   ],
   "students": [
