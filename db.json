@@ -281,6 +281,14 @@
       "password": "jessyjess",
       "imageUrl": "student5.jpeg",
       "invoiceAdress": "Storstigen 3"
+    },
+    {
+      "id": "3fd4",
+      "course": "React",
+      "name": "Yelli Cefalu",
+      "email": "yellicefalu@gmail.com",
+      "password": "cefalu",
+      "imageUrl": "student5.jpeg"
     }
   ],
   "testimonials": [
