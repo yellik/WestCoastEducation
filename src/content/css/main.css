@@ -1,5 +1,9 @@
-
+/*user-side css*/
 @import './gallery.css';
 @import './index.css';
 @import './site.css';
+@import './course-details.css';
+@import './utilities.css';
 
+/*user-side css*/
+@import url('./admin/index.css');

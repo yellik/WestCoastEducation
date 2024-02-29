@@ -271,7 +271,8 @@
       "email": "anna.andersson@gmail.com",
       "password": "Anna",
       "imageUrl": "student5.jpeg",
-      "invoiceAdress": "Stortorget 1"
+      "invoiceAdress": "Stortorget 1",
+      "mobileNumber": "234567"
     },
     {
       "id": "48bf",
@@ -280,7 +281,8 @@
       "email": "jess@hello.com",
       "password": "jessyjess",
       "imageUrl": "student5.jpeg",
-      "invoiceAdress": "Storstigen 3"
+      "invoiceAdress": "Storstigen 3",
+      "mobileNumber": "555588"
     },
     {
       "id": "3fd4",
@@ -288,7 +290,28 @@
       "name": "Yelli Cefalu",
       "email": "yellicefalu@gmail.com",
       "password": "cefalu",
-      "imageUrl": "student5.jpeg"
+      "imageUrl": "student5.jpeg",
+      "mobileNumber": "23698745"
+    },
+    {
+      "id": "496a",
+      "course": "Python",
+      "name": "Vanilla Ice",
+      "email": "vanillaice",
+      "mobileNumber": "",
+      "invoiceAdress": "",
+      "password": "",
+      "imageUrl": "no-car.png"
+    },
+    {
+      "id": "3296",
+      "course": "Python",
+      "name": "Vanilla Ice",
+      "email": "vanillaice@gmail.com",
+      "mobileNumber": "121245856",
+      "invoiceAdress": "Broklyn Bridge",
+      "password": "vanilla",
+      "imageUrl": "student3.jpeg"
     }
   ],
   "testimonials": [

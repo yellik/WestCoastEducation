@@ -1,57 +1,57 @@
 
 import { ResponseModel } from "../models/ResponseModel.js";
-import { listAllCourses } from "../services/courses.js";
+import { listAllStudents } from "../services/studentList.js";
 function initApp() {
-  listCourses();
+  listStudents();
 }
 
 
-async function listCourses() {
-  const app = document.querySelector('#courseList') as HTMLDivElement;
+async function listStudents() {
+  const app = document.querySelector('#student-list') as HTMLDivElement;
   app.innerHTML = '';
 
   let result: ResponseModel;
 
   try {
-    result = await listAllCourses();
+    result = await listAllStudents();
   } catch (error) {
     console.error('Error fetching courses:', error);
     return;
   }
 
-  console.log('Fetched Courses:', result);
+  console.log('Fetched Students:', result);
 
   if (!Array.isArray(result)) {
     console.error('Invalid response format. Expected a "results" array.');
     return;
   }
 
-  result.forEach((course) => {
-    console.log('Rendering Course:', course);
+  result.forEach((student) => {
+    console.log('Rendering student:', student);
 
-    const courseElement = document.createElement('div');
-    courseElement.setAttribute('course', 'course-card')
-    document.body.appendChild(courseElement);
-    // Check if the necessary properties are present in the course object
-    if (!course.name || !course.imageUrl) {
-      console.error('Invalid course object:', course);
+    const studentElement = document.createElement('div');
+    studentElement.setAttribute('student', 'student-card')
+    document.body.appendChild(studentElement);
+    // Check if the necessary properties are present in the student object
+    if (!student.name || !student.imageUrl) {
+      console.error('Invalid course object:', student);
       return;
     }
   
-    courseElement.innerHTML = `
-      <h2>${course.name}</h2>
-      <p>${course.type}</p>
-      <p>${course.startDate}</p>
-      <p>${course.duration}</p>
-      <p>${course.description}</p>
+    studentElement.innerHTML = `
+      <h2>${student.name}</h2>
+      <p>${student.username}</p>
+      <p>${student.course}</p>
+      <p>${student.invoiceAdress}</p>
+      <p>${student.mobileNumber}</p>
    
-      <img src="../src/content/images/courses/${course.imageUrl}" alt="${course.name}">`;
+      <img src="../src/content/images/courses/${student.imageUrl}" alt="${student.name}">`;
 
-    app.appendChild(courseElement);
+    app.appendChild(studentElement);
   });
 }
 
 
 
-document.addEventListener('DOMContentLoaded', listCourses);
+document.addEventListener('DOMContentLoaded', listStudents);
 document.addEventListener('DOMContentLoaded', initApp);

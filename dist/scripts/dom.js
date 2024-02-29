@@ -4,23 +4,23 @@ const createCourseCard = (course) => {
   div.classList.add('course-image');
   div.appendChild(createCourseImage(course.imageUrl, course.id));
   div.appendChild(createCourseInfo(course));
-
+  
   return div;
 
   
 };
-const createTestimonialCard = (testimonial) => {
+
+const createStudentCard = (student) => {
   const div = document.createElement('div');
-  div.classList.add('testimonial-image');
-  div.appendChild(createTestimonialImage(testimonial.imageUrl, testimonial.id));
-  div.appendChild(createTestimonialInfo(testimonial));
+  div.classList.add('student-image');
+  div.appendChild(createImage(student.imageUrl, student.id))
+  div.appendChild(createStudentInfo(student))
 
   return div;
+}
 
-  
-};
 
-const createCourseImage = (imageUrl, id) => {
+const createImage = (imageUrl, id) => {
   const image = document.createElement('img');
   image.setAttribute('src', `../content/images-new/${imageUrl}`);
   image.setAttribute('id', id);
@@ -47,6 +47,7 @@ const createCourseList = (courses, element) => {
     container.appendChild(createSpan(`Course brief: ${course.description}`));
     container.appendChild(createSpan(`Course rating: ${course.avrRating}`));
     element.appendChild(container);
+ 
   });
 };
 
@@ -54,6 +55,7 @@ const mergeCoursesWithStudents = (courses, students, element) => {
   courses.forEach((course) => {
     const container = createDiv();
     container.setAttribute('courseid', course.id);
+    container.appendChild(createSpan(course.imageUrl));
     container.appendChild(createSpan(course.name));
     container.appendChild(createSpan(`This course is taught: ${course.type}`));
     container.appendChild(createSpan(`Course brief: ${course.description}`));
@@ -102,4 +104,9 @@ const addCourseImageClickHandler = (images) => {
 };
 
 
-export { createCourseCard, addCourseImageClickHandler, createCourseList, mergeCoursesWithStudents, createTestimonialCard };
+export { createCourseCard, 
+  createStudentCard, 
+  addCourseImageClickHandler, 
+  createCourseList, 
+  mergeCoursesWithStudents
+ };

@@ -8,6 +8,7 @@ async function initPage() {
 
   students.forEach((student) => {
     studentList.appendChild(createStudentCard(student));
+   
   });
 
   // Hämta in alla bilder och knyt en klick händelse till varje bild...

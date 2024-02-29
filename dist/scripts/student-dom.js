@@ -20,16 +20,17 @@ const createImage = (imageUrl, id) => {
 };
 
 const createStudentInfo = (student) => {
-  const paragraph = document.createElement('p');
-  paragraph.appendChild(
+  const div = document.createElement('div');
+  div.appendChild(
+
     document.createTextNode(`This student is called: ${student.name}, 
     He or she is studying: ${student.course}, 
     their email is: ${student.username} 
     their number is: ${student.mobileNumber}, 
     ${student.invoiceAdress}`)
-  );
+    )
+  return div;
 
-  return paragraph;
 };
 
 
@@ -45,9 +46,9 @@ const createStudentList = (students, element) => {
     const container = createDiv();
     container.setAttribute('studentid', student.id);
     container.appendChild(createSpan(student.name));
-    container.appendChild(createSpan(`This student is taught: ${student.type}`));
-    container.appendChild(createSpan(`student brief ${student.description}`));
-    container.appendChild(createSpan(`student rating: ${student.avrRating}`));
+    container.appendChild(createSpan(`This student is enrolled in: ${student.course}`));
+    container.appendChild(createSpan(`student's email address is ${student.username}`));
+    container.appendChild(createSpan(`student's invoice address is: ${student.invoiceAdress}`));
     element.appendChild(container);
   });
 };
