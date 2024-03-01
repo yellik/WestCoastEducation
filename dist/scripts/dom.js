@@ -29,12 +29,12 @@ const createImage = (imageUrl, id) => {
 };
 
 const createCourseInfo = (course) => {
-  const paragraph = document.createElement('p');
+  const paragraph = document.createElement('div');
   paragraph.appendChild(
     document.createTextNode(`${course.name} This course is taught:${course.type} Current cost${course.cost} Average rating:${course.avrRating}`)
   );
 
-  return paragraph;
+  return div;
 };
 
 

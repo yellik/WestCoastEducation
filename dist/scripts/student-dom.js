@@ -74,7 +74,7 @@ const addStudentImageClickHandler = (images) => {
 
     image.addEventListener('click', () => {
       console.log(location);
-      location.href = `/pages/student-details.html?id=${studentId}`;
+      location.href = `src\pages\course-detail-page.html?id=${courseId}`;
     });
   });
 };

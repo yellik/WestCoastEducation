@@ -39,13 +39,14 @@ async function listCourses() {
     }
   
     courseElement.innerHTML = `
+      <img src="../src/content/images/courses/${course.imageUrl}" alt="${course.name}">
       <h2>${course.name}</h2>
       <p>${course.type}</p>
       <p>${course.startDate}</p>
       <p>${course.duration}</p>
       <p>${course.description}</p>
    
-      <img src="../src/content/images/courses/${course.imageUrl}" alt="${course.name}">`;
+      `;
 
     app.appendChild(courseElement);
   });
