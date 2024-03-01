@@ -8,7 +8,7 @@ export interface Course extends BaseType{
     };
     duration: number;
     teacherName: string;
-    cost: number;
+    price: number;
     description: string;
     avrRating: number;
 }

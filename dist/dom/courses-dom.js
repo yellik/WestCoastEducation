@@ -44,6 +44,7 @@ function listCourses() {
       <p>${course.type}</p>
       <p>${course.startDate}</p>
       <p>${course.duration}</p>
+      <p>${course.price}</p>
       <p>${course.description}</p>
    
       `;

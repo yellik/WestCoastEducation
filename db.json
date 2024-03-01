@@ -9,7 +9,8 @@
       "imageUrl": "course2.jpeg",
       "description": "Makes you smart...",
       "startDate": "02.02.2024",
-      "duration": "20 days"
+      "duration": "20 days",
+      "price": 599
     },
     {
       "id": "3",
@@ -20,7 +21,8 @@
       "type": "on-demand",
       "teacherName": "Obi-van-Kenobi",
       "startDate": "14.02.2024",
-      "duration": "67 days"
+      "duration": "67 days",
+      "price": 899
     },
     {
       "name": "Web Design",
@@ -31,7 +33,8 @@
       "description": "It's got a cool name",
       "id": "4",
       "startDate": "22.02.2024",
-      "duration": "87 days"
+      "duration": "87 days",
+      "price": 999
     },
     {
       "courseName": "C#",
@@ -42,7 +45,8 @@
       "description": "fairy dust ",
       "id": "6",
       "startDate": "14.03.2024",
-      "duration": "90 days"
+      "duration": "90 days",
+      "price": 1299
     },
     {
       "name": "typescript",
@@ -53,7 +57,8 @@
       "description": "hello",
       "id": "7",
       "startDate": "22.03.2024",
-      "duration": "40 days"
+      "duration": "40 days",
+      "price": 1599
     },
     {
       "name": "css flex",
@@ -64,7 +69,8 @@
       "description": "this should be fun",
       "id": "8",
       "startDate": "01.05.2024",
-      "duration": "17 days"
+      "duration": "17 days",
+      "price": 1699
     },
     {
       "name": "dev-ops",
@@ -75,7 +81,8 @@
       "description": "",
       "id": "9",
       "startDate": "01.06.2024",
-      "duration": "71 days"
+      "duration": "71 days",
+      "price": 599
     },
     {
       "name": "fullastack developer ",
@@ -86,7 +93,8 @@
       "description": "this is all about knowing it all",
       "id": "10",
       "startDate": "14.06.2024",
-      "duration": "25 days"
+      "duration": "25 days",
+      "price": 599
     },
     {
       "name": "Suzuki metod",
@@ -97,7 +105,8 @@
       "description": "",
       "id": "11",
       "startDate": "24.07.2024",
-      "duration": "25 days"
+      "duration": "25 days",
+      "price": 399
     },
     {
       "name": "Big Data",
@@ -105,71 +114,64 @@
       "avrRating": "5",
       "teacherName": "Yoda",
       "imageUrl": "student4.jpeg",
-      "description": "",
+      "description": "Build that Ai that everyyone needs",
       "id": "12",
       "startDate": "24.07.2024",
-      "duration": "15 days"
+      "duration": "15 days",
+      "price": 399
     },
     {
       "id": "9ecf",
       "name": "JSON SEVER",
       "type": "in-class",
+      "startDate": "26.07.2024",
       "avrRating": "4",
       "teacherName": "Margareth Tacher ",
       "imageUrl": "student3.jpeg",
-      "description": ""
+      "description": "A great way to drive yourself insane",
+      "duration": "15 days",
+      "price": 299
     },
     {
       "id": "ae16",
       "name": "server side hacking",
+      "startDate": "26.07.2024",
+      "duration": "17 days",
       "type": "remote",
       "avrRating": "4",
       "teacherName": "PETER PAN",
       "imageUrl": "student3.jpeg",
-      "description": ""
+      "description": "get rich die fast",
+      "price": 899
     },
     {
       "id": "7542",
       "name": "GitHub Commands",
+      "startDate": "01.09.2024",
+      "duration": "17 days",
       "type": "remote",
       "avrRating": "4",
       "teacherName": "Valentino Rossi",
       "imageUrl": "student1.jpeg",
-      "description": "Learn to co-operate with others though the most famous platform in the world"
+      "description": "Learn to co-operate with others though the most famous platform in the world",
+      "price": 599
     },
     {
       "id": "e1b3",
       "name": "coding for beginners",
+      "startDate": "01.05.2024",
+      "duration": "17 days",
       "type": "in-class",
       "avrRating": "5",
       "teacherName": "Steven Spielberg",
       "imageUrl": "student6.jpeg",
-      "description": "Start your IT career with one of our most popular courses. "
-    },
-    {
-      "id": "adc8",
-      "name": "css",
-      "type": "in-class",
-      "avrRating": "5",
-      "teacherName": "Barack Obama",
-      "imageUrl": "course3.jpeg",
-      "description": "The president himself shows off his creative design skills"
-    },
-    {
-      "id": "f939",
-      "name": "web design2 ",
-      "avrRating": "5",
-      "teacherName": "Rihanna",
-      "price": "100000000",
-      "startDate": "2024-02-27",
-      "duration": "20",
-      "imageUrl": "student3.jpe",
-      "description": "Rihanna herself will teach this course - literally worth a million dollars "
+      "description": "Start your IT career with one of our most popular courses. ",
+      "price": 599
     },
     {
       "id": "bf5a",
       "name": "back-end Developer",
-      "classType": "online",
+      "type": "online",
       "avrRating": "5",
       "teacherName": "Rihanna",
       "price": "599",
@@ -179,32 +181,21 @@
       "description": "A great course for those of you who want to spend the rest of your life in the server room. "
     },
     {
-      "id": "3a44",
-      "name": "full-stack Developer",
-      "classType": "in-class",
-      "avrRating": "4",
-      "teacherName": "",
-      "price": "",
-      "startDate": "",
-      "duration": "",
-      "imageUrl": "no-car.png",
-      "description": ""
-    },
-    {
       "id": "ad8a",
       "name": "It support",
-      "classType": "in-class",
+      "type": "in-class",
       "avrRating": "3",
       "teacherName": "JZ",
       "price": "500000000",
       "startDate": "2024-02-20",
-      "duration": "",
+      "duration": "69 days",
       "imageUrl": "student8.jpeg",
-      "description": ""
+      "description": "One needs a job, innit?"
     },
     {
       "id": "31a3",
       "name": "React ",
+      "type": "online",
       "avrRating": "5",
       "teacherName": "Rihanna",
       "price": "5000",
