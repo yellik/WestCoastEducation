@@ -3,7 +3,7 @@
     {
       "id": "2",
       "name": "Python",
-      "type": "remote",
+      "type": "online",
       "avrRating": "4",
       "teacherName": "Adam Sandler",
       "imageUrl": "course2.jpeg",
@@ -38,7 +38,7 @@
     },
         {
       "name": "typescript",
-      "type": "remote",
+      "type": "online",
       "avrRating": "6",
       "teacherName": "Angelina Jolie",
       "imageUrl": "course6.jpeg",
@@ -62,7 +62,7 @@
     },
     {
       "name": "dev-ops",
-      "type": "remote",
+      "type": "online",
       "avrRating": "5",
       "teacherName": "The wicked witch",
       "imageUrl": "student2.jpeg",
@@ -74,7 +74,7 @@
     },
     {
       "name": "fullastack developer ",
-      "type": "remote ",
+      "type": "online",
       "avrRating": "3",
       "teacherName": "Freddie Mercury ",
       "imageUrl": "student7.jpeg",
@@ -125,7 +125,7 @@
       "name": "server side hacking",
       "startDate": "26.07.2024",
       "duration": "17 days",
-      "type": "remote",
+      "type": "online",
       "avrRating": "4",
       "teacherName": "PETER PAN",
       "imageUrl": "student3.jpeg",
@@ -137,7 +137,7 @@
       "name": "GitHub Commands",
       "startDate": "01.09.2024",
       "duration": "17 days",
-      "type": "remote",
+      "type": "online",
       "avrRating": "4",
       "teacherName": "Valentino Rossi",
       "imageUrl": "student1.jpeg",

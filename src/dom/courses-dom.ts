@@ -1,7 +1,7 @@
 
 import { ResponseModel } from "../models/ResponseModel.js";
 import { listAllCourses } from "../services/courses.js";
-import { createDiv, createParagraph, createImage} from "./dom-modules.js";
+import { createDiv, createParagraph, createImage, addCourseImageClickHandler, createTitle} from "./dom-modules.js";
 function initApp() {
   listCourses();
 }
@@ -40,15 +40,19 @@ async function listCourses() {
       return;
     }
     
-    const courseTitle = document.createElement('h1');
+   
     courseElement.appendChild(createImage(course.imageUrl, course.id))
-    courseElement.appendChild(courseTitle);
+    courseElement.appendChild(createTitle(`${course.name}`));
     courseElement.appendChild(createParagraph(`${course.type}`));
     courseElement.appendChild(createParagraph(`${course.description}`));
-    courseElement.appendChild(createParagraph(`This course starts on: ${course.startDate}`));
-    courseElement.appendChild(createParagraph(`This couse takes: ${course.duration} days to complete`));
-    courseElement.appendChild(createParagraph(`The total cost is EUR ${course.price}`));
+    courseElement.appendChild(createParagraph(`We start on: ${course.startDate}`));
+    courseElement.appendChild(createParagraph(`you will be done in: ${course.duration}`));
+    courseElement.appendChild(createParagraph(`Only EUR ${course.price}`));
     
+
+    //make clickable images with link to details 
+    const images = courseElement.querySelectorAll('img');
+    addCourseImageClickHandler(Array.from(images));
   });
   
  

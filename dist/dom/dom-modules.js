@@ -11,10 +11,25 @@ const createSpan = (text) => {
     span.textContent = text;
     return span;
 };
+const createTitle = (text) => {
+    const h1 = document.createElement('h1');
+    h1.textContent = text;
+    return h1;
+};
 const createImage = (imageUrl, id) => {
     const image = document.createElement('img');
     image.setAttribute('src', `src/content/images/courses/${imageUrl}`);
     image.setAttribute('id', id);
     return image;
 };
-export { createParagraph, createDiv, createSpan, createImage };
+const addCourseImageClickHandler = (images) => {
+    images.forEach((image) => {
+        const src = image.getAttribute('src');
+        const courseId = image.getAttribute('id');
+        image.addEventListener('click', () => {
+            console.log(location);
+            location.href = `src/pages/course-detail-page.html?id=${courseId}`;
+        });
+    });
+};
+export { createParagraph, createDiv, createSpan, createImage, createTitle, addCourseImageClickHandler };
