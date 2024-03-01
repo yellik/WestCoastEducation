@@ -10,121 +10,74 @@
       content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Välkommen till Westcoast Cars i Stenungsund, Västkustens pärla, för nya eller begnade bilar" />
-    <link
-      rel="stylesheet"
-      href="/content/css/site.css" />
-    <link
-      rel="stylesheet"
-      href="/content/css/navigation.css" />
-    <link
-      rel="stylesheet"
-      href="/content/css/utilities.css" />
-    <link
-      rel="stylesheet"
-      href="/content/css/about.css" />
+      content="Welcome to Westcoast Education" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="/src/content/css/main.css">
+    
+    
     <script
-      src="https://kit.fontawesome.com/55174c58a9.js"
-      crossorigin="anonymous"></script>
-    <title>Westcoast Cars | Välkommen</title>
+      src="./dist/dom/userNav-dom.js"
+      defer>
+    </script>
+    
+    <title>Westcoast Education| About us</title>
   </head>
+
   <body class="grid-container">
-    <header>
-      <nav>
-        <div class="container">
-          <ul class="menu">
-            <li class="logo">
-              <a
-                class="logo-title"
-                href="/index.html"
-                ><span><i class="fa-solid fa-cars"></i></span> Westcoast Cars</a
-              >
-            </li>
-            <li class="toggle">
-              <input
-                class="menu-btn"
-                type="checkbox"
-                id="menu-btn" />
-              <label
-                class="menu-icon"
-                for="menu-btn"
-                ><span class="nav-icon"></span>
-              </label>
-            </li>
-            <li class="menu-item">
-              <a href="/index.html">Start</a>
-            </li>
-            <li class="menu-item">
-              <a
-                class="active"
-                href="/pages/about.html"
-                >Om Oss</a
-              >
-            </li>
-            <li class="menu-item">
-              <a href="/pages/contact.html">Kontakta Oss</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <article id="about-area">
-        <div>
-          <section>
-            <h3 class="page-title">Our Famous Univesity</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis aspernatur aut impedit laudantium error, quod dolor
-              porro dolore nostrum ipsam neque adipisci officiis asperiores
-              maxime quia, qui illum illo, cumque cupiditate voluptate totam
-              alias ab dolorem. Cupiditate vitae reprehenderit, nam ratione,
-              blanditiis deleniti id laudantium voluptatum, corrupti nihil optio
-              natus.
-            </p>
-          </section>
-          <section>
-            <img
-              src="/src/content/images/courses/course5.jpeg"
-              alt="students doing javascripts" />
-          </section>
-        </div>
-      </article>
-      <article id="testimonials-area">
-        <h3 class="page-title">Vad tycker våra kunder?</h3>
-        <div>
-          <section>
-            <img
-              src="../content/images/students/student2.jpeg"
-              alt="python course at WestCoast University" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
-              sequi. Dignissimos quae eligendi reprehenderit libero nostrum
-              repudiandae labore dicta veritatis.
-            </p>
-          </section>
-          <section>
-            <img
-              src=""
-              alt="Man 1" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
-              sequi. Dignissimos quae eligendi reprehenderit libero nostrum
-              repudiandae labore dicta veritatis.
-            </p>
-          </section>
-          <section>
-            <img
-              src="../content/images/woman-2.jpg"
-              alt="kvinna 2" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
-              sequi. Dignissimos quae eligendi reprehenderit libero nostrum
-              repudiandae labore dicta veritatis.
-            </p>
-          </section>
-        </div>
-      </article>
+      <main>
+        <article id="about-us">
+            <section class="container">
+                <h3 class="page-title">Our Famous Univesity</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis aspernatur aut impedit laudantium error, quod dolor
+                  porro dolore nostrum ipsam neque adipisci officiis asperiores
+                  maxime quia, qui illum illo, cumque cupiditate voluptate totam
+                  alias ab dolorem. Cupiditate vitae reprehenderit, nam ratione,
+                  blanditiis deleniti id laudantium voluptatum, corrupti nihil optio
+                  natus.
+                </p>
+            </section>
+            <section>
+              <img
+                src="/src/content/images/courses/course5.jpeg"
+                alt="students doing javascripts" width="300px" />
+            </section>
+        </article>
+        <article id="testimonials-area">
+          <h3 class="page-title">Vad tycker våra kunder?</h3>
+            <section>
+              <img
+                src="../content/images/students/student2.jpeg"
+                alt="python course at WestCoast University" width="300px"/>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+                sequi. Dignissimos quae eligendi reprehenderit libero nostrum
+                repudiandae labore dicta veritatis.
+              </p>
+            </section>
+            <section>
+              <img
+                src=""
+                alt="Man 1" />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+                sequi. Dignissimos quae eligendi reprehenderit libero nostrum
+                repudiandae labore dicta veritatis.
+              </p>
+            </section>
+            <section>
+              <img
+                src="../content/images/woman-2.jpg"
+                alt="kvinna 2" />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+                sequi. Dignissimos quae eligendi reprehenderit libero nostrum
+                repudiandae labore dicta veritatis.
+              </p>
+            </section>
+        </article>
     </main>
     <footer>
       <p>Westcoast Cars &copy; 2023</p>
