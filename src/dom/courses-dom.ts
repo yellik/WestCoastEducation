@@ -1,6 +1,7 @@
 
 import { ResponseModel } from "../models/ResponseModel.js";
 import { listAllCourses } from "../services/courses.js";
+import { createDiv, createParagraph, createImage} from "./dom-modules.js";
 function initApp() {
   listCourses();
 }
@@ -8,8 +9,9 @@ function initApp() {
 
 async function listCourses() {
   const app = document.querySelector('#courseList') as HTMLDivElement;
-  app.innerHTML = '';
-
+  //app.innerHTML = '';
+  console.log(app);
+  
   let result: ResponseModel;
 
   try {
@@ -29,31 +31,30 @@ async function listCourses() {
   result.forEach((course) => {
     console.log('Rendering Course:', course);
 
-    const courseElement = document.createElement('div');
+    const courseElement = createDiv();
     courseElement.setAttribute('course', 'course-card')
-    document.body.appendChild(courseElement);
+    app.appendChild(courseElement);
     // Check if the necessary properties are present in the course object
     if (!course.name || !course.imageUrl) {
       console.error('Invalid course object:', course);
       return;
     }
-  
-    courseElement.innerHTML = `
-      <img src="../src/content/images/courses/${course.imageUrl}" alt="${course.name}">
-      <h2>${course.name}</h2>
-      <p>${course.type}</p>
-      <p>${course.startDate}</p>
-      <p>${course.duration}</p>
-      <p>${course.price}</p>
-      <p>${course.description}</p>
-   
-      `;
-
-    app.appendChild(courseElement);
+    
+    const courseTitle = document.createElement('h1');
+    courseElement.appendChild(createImage(course.imageUrl, course.id))
+    courseElement.appendChild(courseTitle);
+    courseElement.appendChild(createParagraph(`${course.type}`));
+    courseElement.appendChild(createParagraph(`${course.description}`));
+    courseElement.appendChild(createParagraph(`This course starts on: ${course.startDate}`));
+    courseElement.appendChild(createParagraph(`This couse takes: ${course.duration} days to complete`));
+    courseElement.appendChild(createParagraph(`The total cost is EUR ${course.price}`));
+    
   });
+  
+ 
+  
+ 
 }
-
-
 
 document.addEventListener('DOMContentLoaded', listCourses);
 document.addEventListener('DOMContentLoaded', initApp);

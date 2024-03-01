@@ -1,4 +1,4 @@
-import {createDiv}
+
 /**<div class="navbar">
 <a href="index.html">
   <img src="/content/images-new/1114.jpg" alt="Logo" class="logo">
@@ -14,5 +14,4 @@ import {createDiv}
     <i class="closeIcon material-icons">close</i>
   </button>
 </div>**/
-
 

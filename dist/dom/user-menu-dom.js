@@ -1,4 +1,4 @@
-export {};
+"use strict";
 /**<div class="navbar">
 <a href="index.html">
   <img src="/content/images-new/1114.jpg" alt="Logo" class="logo">

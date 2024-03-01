@@ -36,19 +36,7 @@
       "duration": "87 days",
       "price": 999
     },
-    {
-      "courseName": "C#",
-      "type": "in-class",
-      "avrRating": "6",
-      "teacherName": "Peter Pan",
-      "imageUrl": "course5.jpeg",
-      "description": "fairy dust ",
-      "id": "6",
-      "startDate": "14.03.2024",
-      "duration": "90 days",
-      "price": 1299
-    },
-    {
+        {
       "name": "typescript",
       "type": "remote",
       "avrRating": "6",
