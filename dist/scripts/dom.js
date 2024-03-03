@@ -2,7 +2,7 @@
 const createCourseCard = (course) => {
   const div = document.createElement('div');
   div.classList.add('course-image');
-  div.appendChild(createCourseImage(course.imageUrl, course.id));
+  div.appendChild(createImage(course.imageUrl, course.id));
   div.appendChild(createCourseInfo(course));
   
   return div;
@@ -22,7 +22,7 @@ const createStudentCard = (student) => {
 
 const createImage = (imageUrl, id) => {
   const image = document.createElement('img');
-  image.setAttribute('src', `../content/images-new/${imageUrl}`);
+  image.setAttribute('src', `src/content/images/courses/${imageUrl}`);
   image.setAttribute('id', id);
 
   return image;
@@ -34,7 +34,7 @@ const createCourseInfo = (course) => {
     document.createTextNode(`${course.name} This course is taught:${course.type} Current cost${course.cost} Average rating:${course.avrRating}`)
   );
 
-  return div;
+  return paragraph
 };
 
 
@@ -55,7 +55,6 @@ const mergeCoursesWithStudents = (courses, students, element) => {
   courses.forEach((course) => {
     const container = createDiv();
     container.setAttribute('courseid', course.id);
-    container.appendChild(createSpan(course.imageUrl));
     container.appendChild(createSpan(course.name));
     container.appendChild(createSpan(`This course is taught: ${course.type}`));
     container.appendChild(createSpan(`Course brief: ${course.description}`));

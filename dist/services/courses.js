@@ -14,3 +14,9 @@ export function listAllCourses() {
         return result;
     });
 }
+export function listCourseDetailsbyId(courseId) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const result = yield fetchData(`courses/${courseId}`);
+        return result;
+    });
+}

@@ -18,7 +18,9 @@ const createTitle = (text) => {
 };
 const createImage = (imageUrl, id) => {
     const image = document.createElement('img');
-    image.setAttribute('src', `src/content/images/courses/${imageUrl}`);
+    // Construct the absolute URL based on the root of the project
+    const absoluteImageUrl = new URL(`src/content/images/courses/${imageUrl}`, window.location.origin).toString();
+    image.setAttribute('src', absoluteImageUrl);
     image.setAttribute('id', id);
     return image;
 };

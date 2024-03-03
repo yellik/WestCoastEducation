@@ -1,4 +1,5 @@
 
+
 const createParagraph = (text: string): HTMLParagraphElement => {
     const p: HTMLParagraphElement = document.createElement('p');
     p.textContent = text;
@@ -22,13 +23,18 @@ const createTitle = (text: string): HTMLElement => {
   };
 
 
-  const createImage = (imageUrl : string, id: string): HTMLElement => {
+  const createImage = (imageUrl: string, id: string): HTMLElement => {
     const image: HTMLImageElement = document.createElement('img');
-    image.setAttribute('src', `src/content/images/courses/${imageUrl}`);
+  
+    // Construct the absolute URL based on the root of the project
+    const absoluteImageUrl = new URL(`src/content/images/courses/${imageUrl}`, window.location.origin).toString();
+  
+    image.setAttribute('src', absoluteImageUrl);
     image.setAttribute('id', id);
   
     return image;
   };
+  
 
   const addCourseImageClickHandler = (images: HTMLImageElement[]) => {
     images.forEach((image : HTMLImageElement) => {

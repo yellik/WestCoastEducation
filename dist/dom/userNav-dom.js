@@ -1,13 +1,13 @@
 "use strict";
-const app = document.createElement('div');
-app.setAttribute('header', '');
-document.body.appendChild(app);
+const body = document.querySelector('.grid-container');
+const app = document.createElement('header');
+body === null || body === void 0 ? void 0 : body.appendChild(app);
 // Create navbar element
 const navbar = document.createElement('div');
 navbar.classList.add('navbar');
 app.appendChild(navbar);
 const logoLink = document.createElement('a');
-logoLink.href = 'index.html';
+logoLink.href = '/index.html';
 navbar.appendChild(logoLink);
 const logoImage = document.createElement('img');
 logoImage.src = '/content/images-new/1114.jpg';
@@ -18,7 +18,7 @@ const menuUl = document.createElement('ul');
 menuUl.classList.add('menu');
 navbar.appendChild(menuUl);
 const menuItemsData = [
-    { text: 'See all courses', href: '/course.html' },
+    { text: 'See all courses', href: 'src/pages/course.html' },
     { text: 'Admin', href: 'src/pages/admin/index.html' },
     { text: 'Student Login', href: '../src/pages/login.html' },
 ];

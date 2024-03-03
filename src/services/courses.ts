@@ -6,3 +6,8 @@ Promise<ResponseModel> {
   const result = await fetchData('courses');
   return result as ResponseModel;
 }
+export async function listCourseDetailsbyId(courseId: string): 
+Promise<ResponseModel> {
+  const result = await fetchData(`courses/${courseId}`);
+  return result as ResponseModel;
+}

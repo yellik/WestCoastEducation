@@ -12,3 +12,4 @@ export interface Course extends BaseType{
     description: string;
     avrRating: number;
 }
+
