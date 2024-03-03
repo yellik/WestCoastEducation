@@ -9,8 +9,11 @@ if (validateForm()) {
   const course = new FormData(form);
   const obj = convertFormDataToJson(course);
   saveCourse(obj);
+  alert('Course submitted successfully!');
+  console.log('success');
   } else {
     alert('Please fill in all fields');
+    console.log('error');
   }
  };
 

@@ -1,8 +1,7 @@
 import HttpClient from './http.js';
-import { mergeCoursesWithStudents } from './dom.js';
-
+import { mergeCoursesWithStudents, createButton, handleEditCourse } from './dom.js';
+import { createDiv } from '../dom/dom-modules.js';
 const initPage = async () => {
-  
   const courseUrl = 'http://localhost:3000/courses';
   const studentUrl = 'http://localhost:3000/students';
 
@@ -14,14 +13,31 @@ const initPage = async () => {
   const courses = await courseHttp.get();
   const students = await studentHttp.get();
 
- 
-mergeCoursesWithStudents(courses, students, document.querySelector('#student-with-course'));
+  mergeCoursesWithStudents(courses, students, document.querySelector('#student-with-course'));
 
-    const cards = document.querySelectorAll('#student-with-course div');
-    cards.forEach((card) => {
-      card.addEventListener('click', selectedCourses);
-    });
-  };
+  const cards = document.querySelectorAll('#student-with-course div');
+  cards.forEach((card) => {
+    const courseId = card.getAttribute('courseid');
+
+    const buttonsContainer = createDiv();
+    buttonsContainer.classList.add('course-buttons');
+
+    const editButton = createButton('Edit Course', () => handleEditCourse(courseId));
+    buttonsContainer.appendChild(editButton);
+
+    const deleteButton = createButton('Delete Course', () => handleDeleteCourse(courseId));
+    buttonsContainer.appendChild(deleteButton);
+
+    card.appendChild(buttonsContainer);
+
+    // Move the event listener inside the loop
+    deleteButton.addEventListener('click', handleDeleteCourse);
+
+    card.addEventListener('click', selectedCourses);
+  });
+};
+
+
 const selectedCourses = (e) => {
   let courseId = 0;
   if (e.target.localName === 'div') {
@@ -34,5 +50,19 @@ const selectedCourses = (e) => {
   location.href = `./edit-course.html?id=${courseId}`;
 };
 
-// Händelselyssnare EventListeners...
+
+const handleDeleteCourse = async (courseId) => {
+  try {
+    const courseHttp = new HttpClient(`http://localhost:3000/courses/${courseId}`);
+    await courseHttp.delete();
+
+    // Handle success, e.g., show a confirmation message
+    alert(`Course with ID ${courseId} deleted successfully.`);
+  } catch (error) {
+    console.error('Error deleting course:', error);
+    // Handle error, e.g., show an error message
+    alert(`An error occurred while deleting the course: ${error.message}`);
+  }
+};
+
 document.addEventListener('DOMContentLoaded', initPage)

@@ -1,19 +1,21 @@
-const body = document.querySelector('.grid-container');
-
-const app = document.createElement('header');
-body?.appendChild(app);
+const header = document.querySelector('header');
 
 // Create navbar element
 const navbar = document.createElement('div');
 navbar.classList.add('navbar');
-app.appendChild(navbar);
+header?.appendChild(navbar);
+
+
+const newHeader = document.createElement('header');
+newHeader.appendChild(navbar);
+document.body.insertBefore(newHeader, document.body.firstChild);
 
 const logoLink = document.createElement('a');
 logoLink.href = '/index.html';
 navbar.appendChild(logoLink);
 
 const logoImage = document.createElement('img');
-logoImage.src = '/content/images-new/1114.jpg';
+logoImage.src = '/src/content/images/1114.jpg';
 logoImage.alt = 'Logo';
 logoImage.classList.add('logo');
 logoLink.appendChild(logoImage);
@@ -23,8 +25,8 @@ menuUl.classList.add('menu');
 navbar.appendChild(menuUl);
 
 const menuItemsData = [
-  { text: 'See all courses', href: 'src/pages/course.html' },
-  { text: 'Admin', href: 'src/pages/admin/index.html' },
+  { text: 'See all courses', href: '/src/pages/course.html' },
+  { text: 'Admin', href: '/src/pages/admin/index.html' },
   { text: 'Student Login', href: '../src/pages/login.html' },
 ];
 

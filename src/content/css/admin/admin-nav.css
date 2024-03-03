@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .admin-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .menuItem {
+    margin-left: 50px;
+    width: 300px;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  .menuItem:hover {
+    background-color: #555;
+  }
+  
+ 
+  

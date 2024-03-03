@@ -36,7 +36,7 @@
       "duration": "87 days",
       "price": 999
     },
-        {
+    {
       "name": "typescript",
       "type": "online",
       "avrRating": "6",
@@ -94,18 +94,6 @@
       "id": "11",
       "startDate": "24.07.2024",
       "duration": "25 days",
-      "price": 399
-    },
-    {
-      "name": "Big Data",
-      "type": "in-class",
-      "avrRating": "5",
-      "teacherName": "Yoda",
-      "imageUrl": "student4.jpeg",
-      "description": "Build that Ai that everyyone needs",
-      "id": "12",
-      "startDate": "24.07.2024",
-      "duration": "15 days",
       "price": 399
     },
     {
@@ -191,6 +179,17 @@
       "duration": "6",
       "imageUrl": "student4.jpeg",
       "description": "this is the most confusing course in the world "
+    },
+    {
+      "id": "bd31",
+      "name": "Javascript",
+      "avrRating": "5",
+      "teacherName": "Peter Pan",
+      "price": "788990",
+      "startDate": "",
+      "duration": "99",
+      "imageUrl": "srudent7.jpeg",
+      "description": "I'm Javascript - the best coding language in the world"
     }
   ],
   "students": [

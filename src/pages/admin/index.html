@@ -5,12 +5,8 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="/src/content/css/site.css" />
-       <link
-      rel="stylesheet"
-      href="/src/content/css/admin/index.css" />
+    <link rel="stylesheet" href="/src/content/css/admin/admin-nav.css">  
+    <link rel="stylesheet" href="/src/content/css/admin/index.css"> 
     <script
       src="https://kit.fontawesome.com/55174c58a9.js"
       crossorigin="anonymous"></script>
@@ -19,52 +15,15 @@
     defer
     type="module">
   </script>
+  <script
+    src="/dist/dom/adminNav.js"
+    type="module"
+    defer>
+
+  </script>
     <title>Administration</title>
   </head>
   <body class="grid-container">
-    <header>
-      <nav>
-        <div class="container">
-          <ul class="menu">
-            <li class="logo">
-              <a
-                class="logo-title"
-                href="/index.html"
-                ><span><i class="fa-solid fa-computer"></i></span> Westcoast Education</a
-              >
-            </li>
-            <li class="toggle">
-              <input
-                class="menu-btn"
-                type="checkbox"
-                id="menu-btn" />
-              <label
-                class="menu-icon"
-                for="menu-btn"
-                ><span class="nav-icon"></span>
-              </label>
-            </li>
-            <li class="active">
-              <a href="./index.html">Admin Main</a>
-            </li>
-            <li class="menu-item">
-              <a
-                class="menu-item"
-                href="./add-course.html"
-                >Add a course</a
-              >
-            </li>
-            <li class="menu-item">
-              <a href="./add-student.html">Add student</a>
-            </li>
-  
-            <li class="menu-item">
-              <a href="./student-list.html">See all Students</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
     <main>
       <div class="container">
         <h1 class="page-title">Admin Panel</h1>
