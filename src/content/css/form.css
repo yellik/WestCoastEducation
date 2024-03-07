@@ -1,3 +1,16 @@
+.btn.btn-danger {
+    padding: 10px;
+    background-color: #dc3545; /* Bootstrap's default danger color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn.btn-danger:hover {
+    background-color: #c82333; /* Darken the background color on hover */
+  }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -55,3 +68,6 @@ body {
     background-color: #555;
   }
   
+  header{
+    height: 10vh;
+  }

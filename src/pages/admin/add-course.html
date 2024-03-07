@@ -37,19 +37,19 @@
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Add the name of the course" />
+                placeholder="Add the name of the course" required/>
             </div>
             <label for="online">Online</label>
             <input type="radio" id="online" name="type" value="online">
             <label for="inClass">In-Class</label>
             <input type="radio" id="inClass" name="type" value="in-class">
             <div class="form-control">
-              <label for="AvrRating">Rating</label>
+              <label for="AvrRating">Rating</label >
               <input
                 type="text"
                 name="avrRating"
                 id="avrRating"
-                placeholder=" Course's avr Rating" />
+                placeholder=" Course's avr Rating" required/>
             </div>
             <div class="form-control">
               <label for="teacherName">Tought by</label>
@@ -57,7 +57,7 @@
                 type="text"
                 name="teacherName"
                 id="teacherName"
-                placeholder="Teacher's Name" />
+                placeholder="Teacher's Name" required/>
             </div>
             <div class="form-control">
               <label for="price">Price</label>
@@ -65,14 +65,14 @@
                 type="number"
                 name="price"
                 id="price"
-                placeholder="Total cost for the course" />
+                placeholder="Total cost for the course" required/>
             <div class="form-control">
               <label for="startDate">Start Date</label>
               <input
                 type="date"
                 name="startDate"
                 id="startDate"
-                placeholder="YYYY-MM-DD" />
+                placeholder="YYYY-MM-DD" required/>
             </div>
             <div class="form-control">
               <label for="duration">Duration in days</label>
@@ -80,24 +80,24 @@
                 type="number"
                 name="duration"
                 id="duration"
-                placeholder="Total num of days" />
+                placeholder="Total num of days" required/>
             </div>
             <div class="form-control">
-              <label for="imageUrl">Bild url</label>
+              <label for="imageUrl">Place a local image url</label>
               <input
                 type="text"
                 name="imageUrl"
                 id="imageUrl"
-                value="no-car.png"
-                placeholder="Ange namn på bilden" />
+                value="course8.jpeg"
+                placeholder="Select a picture for display" />
             </div>
             <div class="form-control">
-              <label for="description">Beskrivning</label>
+              <label for="description">Describe the course</label>
               <textarea
                 name="description"
                 id="description"
                 cols="30"
-                rows="10"></textarea>
+                rows="10" required></textarea>
             </div>
             <div class="form-control">
               <button

@@ -42,9 +42,8 @@ async function listStudents() {
       <h2>${student.name}</h2>
       <p>${student.username}</p>
       <p>${student.course}</p>
-      <p>${student.invoiceAdress}</p>
       <p>${student.mobileNumber}</p>
-   
+      <p>${student.invoiceAdress}</p>
       <img src="../src/content/images/courses/${student.imageUrl}" alt="${student.name}">`;
 
     app.appendChild(studentElement);

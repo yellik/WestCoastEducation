@@ -13,18 +13,6 @@
       "id": "2"
     },
     {
-      "id": "3",
-      "name": "Solidity",
-      "imageUrl": "course4.jpeg",
-      "description": "It's got a cool name",
-      "avrRating": 5,
-      "type": "in-class",
-      "teacherName": "Obi-van-Kenobi",
-      "startDate": "14.02.2024",
-      "duration": 67,
-      "price": 899
-    },
-    {
       "name": "Web Design",
       "type": "on demand",
       "avrRating": "5",
@@ -143,6 +131,18 @@
       "duration": "78",
       "imageUrl": "student2.jpeg",
       "description": "This is a really intense course that will make you laugh and cry"
+    },
+    {
+      "id": "af00",
+      "name": "Python Intermediate ",
+      "type": "online",
+      "avrRating": "5",
+      "teacherName": "Peter Pan",
+      "price": "566",
+      "startDate": "2024-04-17",
+      "duration": "56",
+      "imageUrl": "course8.jpeg",
+      "description": "This is a course that makes you so smart you will forget your name"
     }
   ],
   "students": [
@@ -345,6 +345,34 @@
       "course": "javascript intermediate",
       "invoiceAddress": "Lågskärsvägen 19",
       "mobileNumber": "87667094"
+    },
+    {
+      "id": "1128",
+      "name": "Tiziana di Maria",
+      "username": "tizianadimaria@gmail.com",
+      "password": "tiziMaria",
+      "course": "javascript intermediate",
+      "invoiceAddress": "Lalagatan 67",
+      "mobileNumber": "87667094"
+    },
+    {
+      "id": "d811",
+      "name": "Peter Karlsson",
+      "username": "peterkarlsson@gmail.com",
+      "password": "PeterPeter",
+      "course": "javascript intermediate",
+      "invoiceAddress": "Grimstavägen 20",
+      "mobileNumber": "87667094"
+    },
+    {
+      "id": "3e50",
+      "name": "Linda Nilsson",
+      "username": "lindanilsson@gmail.com",
+      "password": "COding4567",
+      "course": "javascript intermediate",
+      "invoiceAddress": "Glanshammarsgatan 63",
+      "mobileNumber": "867306y7uq",
+      "imageUrl": "progilepic.jpeg"
     }
   ],
   "testimonials": [

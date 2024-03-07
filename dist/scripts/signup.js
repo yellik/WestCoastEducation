@@ -3,7 +3,9 @@ import { convertFormDataToJson } from './utilities.js';
 
 const signupForm = document.querySelector('#signupForm');
 
-window.submitForm = async () => {
+signupForm.addEventListener('submit', async (event) => {
+  event.preventDefault(); // Prevent the default form submission
+
   try {
     console.log('Form submitted'); // Check if the function is being called
 
@@ -24,4 +26,4 @@ window.submitForm = async () => {
     console.error('An error occurred:', error.message);
     alert('Error registering user. Please try again.');
   }
-};
+});

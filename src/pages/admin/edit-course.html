@@ -6,9 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="src/content/css/main.css" />
-    <link rel="stylesheet" href="/dist/dom/adminNav.js">
+      rel="stylesheet" href="/src/content/css/form.css" />
+    <link rel="stylesheet" href="/dist/dom/adminNav.js" />
     <script
       type="module"
       src="/dist/scripts/course-edit-course.js"
@@ -22,12 +21,13 @@
     
     <main>
       <section class="container">
+        <header></header>
         <h1 class="page-title">Edit Course</h1>
         <div class="btn-container">
           <button
             id="delete"
             class="btn btn-danger">
-            Radera
+            Delete Course
           </button>
         </div>
         <form id="updateCourseForm">
@@ -37,7 +37,7 @@
               type="text"
               name="name"
               id="name"
-              placeholder="Add the name of the course" />
+              placeholder="Add the name of the course" required/>
           </div>
           <div class="form-control">
             <label for="online">Online</label>
@@ -51,15 +51,15 @@
               type="text"
               name="avrRating"
               id="avrRating"
-              placeholder=" Course's avr Rating" />
+              placeholder=" Course's avr Rating" required/>
           </div>
           <div class="form-control">
-            <label for="teacherName">Tought by</label>
+            <label for="teacherName" >Tought by</label>
             <input
               type="text"
               name="teacherName"
               id="teacherName"
-              placeholder="Teacher's Name" />
+              placeholder="Teacher's Name" required/>
           </div>
           <div class="form-control">
             <label for="price">Price</label>
@@ -67,7 +67,7 @@
               type="number"
               name="price"
               id="price"
-              placeholder="Total cost for the course" />
+              placeholder="Total cost for the course" required/>
           </div>
           <div class="form-control">
             <label for="startDate">Start Date</label>
@@ -75,7 +75,7 @@
               type="date"
               name="startDate"
               id="startDate"
-              placeholder="YYYY-MM-DD" />
+              placeholder="YYYY-MM-DD" required/>
           </div>
           <div class="form-control">
             <label for="duration">Duration in days</label>
@@ -83,15 +83,15 @@
               type="number"
               name="duration"
               id="duration"
-              placeholder="Total num of days" />
+              placeholder="Total num of days" required/>
           </div>
           <div class="form-control">
-            <label for="imageUrl">Bild url</label>
+            <label for="imageUrl">Image</label>
             <input
               type="text"
               name="imageUrl"
               id="imageUrl"
-              value="no-car.png"
+              value="course3.jpeg"
               placeholder="Ange namn på bilden" />
           </div>
           <div class="form-control">
@@ -100,13 +100,13 @@
               name="description"
               id="description"
               cols="30"
-              rows="10"></textarea>
+              rows="10" required></textarea>
           </div>
           <div class="form-control">
             <button
               type="submit"
               class="btn">
-              Spara
+              Update Details
             </button>
           </div>
         </form>
