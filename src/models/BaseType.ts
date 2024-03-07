@@ -1,5 +1,5 @@
 export interface BaseType {
-    id: number;
+    id: string;
     name: string;
     imageUrl: string;
     

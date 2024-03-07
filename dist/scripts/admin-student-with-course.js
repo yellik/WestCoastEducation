@@ -1,6 +1,10 @@
 import HttpClient from './http.js';
-import { mergeCoursesWithStudents, createButton, handleEditCourse } from './dom.js';
+
+import { mergeCoursesWithStudents, createButton} from './dom.js';
 import { createDiv } from '../dom/dom-modules.js';
+
+let globalCourseId = 0;
+
 const initPage = async () => {
   const courseUrl = 'http://localhost:3000/courses';
   const studentUrl = 'http://localhost:3000/students';
@@ -18,22 +22,17 @@ const initPage = async () => {
   const cards = document.querySelectorAll('#student-with-course div');
   cards.forEach((card) => {
     createDiv()
-    const courseId = card.getAttribute('courseId');
-    console.log(courseId);
+    const currentCourseId = card.getAttribute('courseId');
+    console.log(currentCourseId);
     
+    const editButton = createButton('edit button', selectedCourses);
+    const deleteButton = createButton('delete course', () => {
+      globalCourseId = currentCourseId;
+      handleDeleteCourse();
+    });
+    card.appendChild(editButton);
+    card.appendChild(deleteButton)
     
-
-
-
-    //const deleteButton = createButton('Delete Course', () => handleDeleteCourse(courseId));
-    //buttonsContainer.appendChild(deleteButton);
-
-    
-
-    // Move the event listener inside the loop
-    //deleteButton.addEventListener('click', handleDeleteCourse);
-
-    card.addEventListener('click', selectedCourses);
   });
 };
 
@@ -51,13 +50,13 @@ const selectedCourses = (e) => {
 
 
 
-const handleDeleteCourse = async (courseId) => {
+const handleDeleteCourse = async () => {
   try {
-    const courseHttp = new HttpClient(`http://localhost:3000/courses/${courseId}`);
+    const courseHttp = new HttpClient(`http://localhost:3000/courses/${globalCourseId}`);
     await courseHttp.delete();
 
     // Handle success, e.g., show a confirmation message
-    alert(`Course with ID ${courseId} deleted successfully.`);
+    alert(`Course with ID ${globalCourseId} deleted successfully.`);
   } catch (error) {
     console.error('Error deleting course:', error);
     // Handle error, e.g., show an error message
@@ -65,4 +64,4 @@ const handleDeleteCourse = async (courseId) => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', initPage)
+document.addEventListener('DOMContentLoaded', initPage);

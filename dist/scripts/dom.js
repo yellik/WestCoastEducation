@@ -51,6 +51,14 @@ const createCourseList = (courses, element) => {
   });
 };
 
+const createMessage = (backgroundColor, color, text) => {
+  const message = document.createElement('p')
+  message.style.backgroundColor = backgroundColor;
+  message.style.color = color;
+  message.innerHTML = text;
+  return message
+}
+
 const mergeCoursesWithStudents = (courses, students, element) => {
   courses.forEach((course) => {
     const container = createDiv();
@@ -62,39 +70,39 @@ const mergeCoursesWithStudents = (courses, students, element) => {
 
 
     container.appendChild(createSpan(course.name));
-    container.appendChild(createSpan(`This course is taught: ${course.type}`));
-    container.appendChild(createSpan(`Starting date: ${course.startDate}`));
-    container.appendChild(createSpan(`it runs for: ${course.duration}`));
-   
-    //
-    //xreate a student div through the dom
-    const studentContainer = createDiv();
-    studentContainer.classList.add('student-section')
     // Find students enrolled in the current course
     const enrolledStudents = students.filter((student) => student.course && student.course.toLowerCase() === lowerCaseCourseName);
+      
       const studentList = document.createElement('ul');
       enrolledStudents.forEach((student) => {
         const listItem = document.createElement('li');
-        listItem.innerText = `Enrolled: ${student.name}`;
+        listItem.innerText = `${student.name}`;
         studentList.appendChild(listItem);
-
+        console.log(studentList)
        
       });
-      if (enrolledStudents.length > 5) {
-        const message = document.createElement('p');
-        message.style.backgroundColor = "green";
-        message.style.color = 'white';
-        message.innerText = `Over five students have signed up to this course. It will definetly be running`;
-        studentContainer.appendChild(message);
+      if (enrolledStudents.length > 4) {
+        const message = createMessage('green', 'white', 'More than 5 students signed up for this course. It will definetly be running');
+        container.appendChild(message);
+        container.appendChild(createSpan('Students enrolled'))
+      } else if(enrolledStudents.length > 0) {
+        console.log(enrolledStudents.length);
+        const message = createMessage('yellow', 'black', 'Less than 5 students have signed up for this course. It might not be running');
+        container.appendChild(message);
+        container.appendChild(createSpan('Students enrolled'))
+      } else if (enrolledStudents.length == 0) {
+        const message = createMessage('red', 'white', 'No one has signed up for this course just yet.');
+        container.appendChild(message);
       }
-      studentContainer.appendChild(studentList);
+      
     
     //element.appendChild(studentContainer);
     element.appendChild(container);
-
+    container.appendChild(studentList);
     
   });
 };
+
 
 const createDiv = () => {
   // const div = document.createElement('div');

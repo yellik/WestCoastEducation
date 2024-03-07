@@ -50,7 +50,7 @@ async function displayDetailsDisp() {
 
     if(courseId === course.id) {
     const courseElement = createDiv();
-    courseElement.setAttribute('course', 'course-card');
+    courseElement.setAttribute('id', 'course-card');
     app.appendChild(courseElement);
     courseElement.appendChild(createImage(course.imageUrl, course.id));
     courseElement.appendChild(createTitle(`${course.name}`));
@@ -73,24 +73,7 @@ async function displayDetailsDisp() {
 
   });
 }
-    
-  //test 
-  async function tryingAgain(){
-    let result: ResponseModel;
-    const courseId = location.search.split('=')[1];
-    console.log(courseId);
-    
    
-    try {
-      result = await listCourseDetailsbyId(courseId);
-      return result;
-
-    } catch (error) {
-      console.log('did not work');
-      return 
-    }
-    console.log('fetched this course:', result);
-  }
   
   
 //display specific course
@@ -105,4 +88,4 @@ async function displayDetailsDisp() {
 
   
 document.addEventListener('DOMContentLoaded', displayDetailsDisp);
-document.addEventListener('DOMContentLoaded', tryingAgain);
+

@@ -43,7 +43,7 @@ const updateCourse = async (e) => {
   location.href = './index.html';
 };
 
-const removeCourse = async () => {
+export const removeCourse = async () => {
   const courseId = new URLSearchParams(window.location.search).get('id');
   const url = `http://localhost:3000/courses/${courseId}`;
   const http = new HttpClient(url);

@@ -1,11 +1,8 @@
 import { BaseType } from './BaseType';
 
 export interface Course extends BaseType{
-    starting_date: string;
-    type: {
-        online: boolean;
-        classroom: boolean;
-    };
+    startDate: string;
+    type: "online" | "in-class";
     duration: number;
     teacherName: string;
     price: number;
