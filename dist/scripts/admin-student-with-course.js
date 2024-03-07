@@ -17,38 +17,38 @@ const initPage = async () => {
 
   const cards = document.querySelectorAll('#student-with-course div');
   cards.forEach((card) => {
-    const courseId = card.getAttribute('courseid');
+    createDiv()
+    const courseId = card.getAttribute('courseId');
+    console.log(courseId);
+    
+    
 
-    const buttonsContainer = createDiv();
-    buttonsContainer.classList.add('course-buttons');
 
-    const editButton = createButton('Edit Course', () => handleEditCourse(courseId));
-    buttonsContainer.appendChild(editButton);
 
-    const deleteButton = createButton('Delete Course', () => handleDeleteCourse(courseId));
-    buttonsContainer.appendChild(deleteButton);
+    //const deleteButton = createButton('Delete Course', () => handleDeleteCourse(courseId));
+    //buttonsContainer.appendChild(deleteButton);
 
-    card.appendChild(buttonsContainer);
+    
 
     // Move the event listener inside the loop
-    deleteButton.addEventListener('click', handleDeleteCourse);
+    //deleteButton.addEventListener('click', handleDeleteCourse);
 
     card.addEventListener('click', selectedCourses);
   });
 };
 
-
 const selectedCourses = (e) => {
   let courseId = 0;
   if (e.target.localName === 'div') {
     courseId = e.target.getAttribute('courseid');
-  } else if (e.target.localName === 'div') {
+  } else if (e.target.parentElement && e.target.parentElement.localName === 'div') {
     courseId = e.target.parentElement.getAttribute('courseid');
   }
 
   // Navigera till edit-course.html...
   location.href = `./edit-course.html?id=${courseId}`;
 };
+
 
 
 const handleDeleteCourse = async (courseId) => {

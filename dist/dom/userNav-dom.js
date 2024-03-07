@@ -21,7 +21,7 @@ navbar.appendChild(menuUl);
 const menuItemsData = [
     { text: 'See all courses', href: '/src/pages/course.html' },
     { text: 'Admin', href: '/src/pages/admin/index.html' },
-    { text: 'Student Login', href: '../src/pages/login.html' },
+    { text: 'Student Login', href: '/src/pages/login.html' },
 ];
 menuItemsData.forEach((menuItemData) => {
     const menuItemLi = document.createElement('li');

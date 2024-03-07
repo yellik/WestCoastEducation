@@ -19,7 +19,7 @@ navbar.appendChild(logoLink);
 
 
 const logoImage = document.createElement('img');
-logoImage.src = 'src/content/images/1114.jpg';
+logoImage.src = '/src/content/images/1114.jpg';
 logoImage.alt = 'Logo';
 logoImage.classList.add('logo');
 logoLink.appendChild(logoImage);

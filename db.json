@@ -1,16 +1,16 @@
 {
   "courses": [
     {
-      "id": "2",
-      "name": "Python",
-      "type": "online",
-      "avrRating": "4",
-      "teacherName": "Adam Sandler",
-      "imageUrl": "course2.jpeg",
-      "description": "Makes you smart...",
-      "startDate": "02.02.2024",
-      "duration": "20 days",
-      "price": 599
+      "name": "Python Essentials",
+      "type": "in-class",
+      "avrRating": "",
+      "teacherName": "Peter Pan",
+      "price": "800",
+      "startDate": "2024-03-21",
+      "duration": "89",
+      "imageUrl": "course8.jpeg",
+      "description": "this is your first step to become a python superstar",
+      "id": "2"
     },
     {
       "id": "3",
@@ -70,18 +70,6 @@
       "id": "9",
       "startDate": "01.06.2024",
       "duration": "71 days",
-      "price": 599
-    },
-    {
-      "name": "fullastack developer ",
-      "type": "online",
-      "avrRating": "3",
-      "teacherName": "Freddie Mercury ",
-      "imageUrl": "student7.jpeg",
-      "description": "this is all about knowing it all",
-      "id": "10",
-      "startDate": "14.06.2024",
-      "duration": "25 days",
       "price": 599
     },
     {
@@ -188,8 +176,32 @@
       "price": "788990",
       "startDate": "",
       "duration": "99",
-      "imageUrl": "srudent7.jpeg",
+      "imageUrl": "student7.jpeg",
       "description": "I'm Javascript - the best coding language in the world"
+    },
+    {
+      "id": "0fc1",
+      "name": "TRON blockchain protocol",
+      "classType": "online",
+      "avrRating": "5",
+      "teacherName": "Captain Jack Crook",
+      "price": "6999",
+      "startDate": "2024-05-01",
+      "duration": "78",
+      "imageUrl": "student5.jpeg",
+      "description": "this is a course that takes you deep into the world of blockchain"
+    },
+    {
+      "id": "cad9",
+      "name": "Javascript intermediate",
+      "type": "in-class",
+      "avrRating": "4",
+      "teacherName": "Harry Potter",
+      "price": "899",
+      "startDate": "2024-03-28",
+      "duration": "89",
+      "imageUrl": "course4.jpeg",
+      "description": "This will make you really good at everything you have to know"
     }
   ],
   "students": [
@@ -282,14 +294,88 @@
       "imageUrl": "no-car.png"
     },
     {
-      "id": "3296",
-      "course": "Python",
-      "name": "Vanilla Ice",
-      "email": "vanillaice@gmail.com",
-      "mobileNumber": "121245856",
-      "invoiceAdress": "Broklyn Bridge",
-      "password": "vanilla",
+      "id": "a877",
+      "course": "Tron",
+      "name": "Princess Leya",
+      "email": "princessleya@starwars.com",
+      "mobileNumber": "987642134",
+      "invoiceAdress": "Gallaxy way, 1",
+      "password": "StarWars",
       "imageUrl": "student3.jpeg"
+    },
+    {
+      "id": "793c",
+      "course": "javascript",
+      "name": "Enrique Iglesias",
+      "email": "rickyricky",
+      "mobileNumber": "88005342",
+      "invoiceAdress": "La isla loca 66",
+      "password": "singingoutloud",
+      "imageUrl": "enrique.jpeg"
+    },
+    {
+      "id": "09b8",
+      "course": "javascript",
+      "name": "Shakira",
+      "email": "shakiraloca@gmail.com",
+      "mobileNumber": "07666432",
+      "invoiceAdress": "Barcelona, via Catalan1",
+      "password": "shishi",
+      "imageUrl": "shakira.jpeg"
+    },
+    {
+      "id": "f3fb",
+      "name": "Fredrik Hansson",
+      "username": "fredrikhans@gmail.com",
+      "course": "Python",
+      "password": "hej88888",
+      "invoiceAddress": "Fredriksgatan 1",
+      "mobileNumber": "888888888"
+    },
+    {
+      "id": "5ab4",
+      "name": "Sebastian Lindgren",
+      "username": "sebastianlindgren76@gmail.com",
+      "password": "HelloSebastian",
+      "course": "Python",
+      "invoiceAddress": "Strandvägen 10",
+      "mobileNumber": "07297116554432"
+    },
+    {
+      "id": "3999",
+      "name": "Sabrina Lindholm",
+      "username": "lindholm44@gmail.com",
+      "password": "Ilovecode",
+      "course": "Python",
+      "invoiceAddress": "Bondegatan, 17",
+      "mobileNumber": "076543987"
+    },
+    {
+      "id": "0fa5",
+      "name": "Sabrina Lindholm",
+      "username": "lindholm44@gmail.com",
+      "password": "",
+      "course": "Python",
+      "invoiceAddress": "Bondegatan, 17",
+      "mobileNumber": "076543987"
+    },
+    {
+      "id": "a7de",
+      "name": "Katerina Blom",
+      "username": "katerinablom@gmail.com",
+      "password": "lalala",
+      "course": "Python",
+      "invoiceAddress": "Blomvägen 20",
+      "mobileNumber": "9988776655"
+    },
+    {
+      "id": "d61b",
+      "name": "Hanna Larsson",
+      "username": "hannamontana@gmail.com",
+      "password": "Hanna123",
+      "course": "Python",
+      "invoiceAddress": "Grusåsvägen123",
+      "mobileNumber": "8765543678"
     }
   ],
   "testimonials": [

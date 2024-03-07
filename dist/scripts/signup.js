@@ -19,7 +19,7 @@ window.submitForm = async () => {
 
     alert('User registered successfully!');
     // Redirect to login page or any other desired page after successful signup
-    location.href = '/login.html';
+    location.href = '/src/pages/login.html';
   } catch (error) {
     console.error('An error occurred:', error.message);
     alert('Error registering user. Please try again.');

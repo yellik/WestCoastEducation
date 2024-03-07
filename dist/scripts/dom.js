@@ -54,7 +54,8 @@ const createCourseList = (courses, element) => {
 const mergeCoursesWithStudents = (courses, students, element) => {
   courses.forEach((course) => {
     const container = createDiv();
-    container.setAttribute('courseid', course.id);
+    
+    container.setAttribute('courseId', course.id);
     container.classList.add('admin-course-cards')
 
     const lowerCaseCourseName = course.name.toLowerCase(); // Convert course name to lowercase
@@ -64,30 +65,36 @@ const mergeCoursesWithStudents = (courses, students, element) => {
     container.appendChild(createSpan(`This course is taught: ${course.type}`));
     container.appendChild(createSpan(`Starting date: ${course.startDate}`));
     container.appendChild(createSpan(`it runs for: ${course.duration}`));
+   
     //
     //xreate a student div through the dom
     const studentContainer = createDiv();
     studentContainer.classList.add('student-section')
     // Find students enrolled in the current course
     const enrolledStudents = students.filter((student) => student.course && student.course.toLowerCase() === lowerCaseCourseName);
-    if (enrolledStudents.length > 5) {
       const studentList = document.createElement('ul');
       enrolledStudents.forEach((student) => {
         const listItem = document.createElement('li');
         listItem.innerText = `Enrolled: ${student.name}`;
         studentList.appendChild(listItem);
+
+       
       });
+      if (enrolledStudents.length > 5) {
+        const message = document.createElement('p');
+        message.style.backgroundColor = "green";
+        message.style.color = 'white';
+        message.innerText = `Over five students have signed up to this course. It will definetly be running`;
+        studentContainer.appendChild(message);
+      }
       studentContainer.appendChild(studentList);
-    }else{
-      const message = document.createElement('p');
-      message.innerText = "Less than 5 people signed up for this course. We can't be bothered running it";
-      studentContainer.appendChild(message);
-    }
-    container.appendChild(studentContainer);
+    
+    //element.appendChild(studentContainer);
     element.appendChild(container);
+
+    
   });
 };
-
 
 const createDiv = () => {
   // const div = document.createElement('div');
@@ -123,7 +130,8 @@ const createButton = (text, onClick) => {
 
 // Example handlers for edit and delete buttons
 const handleEditCourse = (courseId) => {
-  location.href = `./edit-course.html?id=${courseId}`;
+  console.log(courseId);
+  location.href = `/pages/edit-course.html?id=${courseId}`;
 };
 
 
